@@ -134,6 +134,11 @@ nav ul li {
   width: 60vw;
 }
 
+#meet_team ul li img {
+  /* make photos round */
+  border-radius: 50%;
+}
+
 #meet_team ul li span {
   /* put text on new lines */
   display: block;

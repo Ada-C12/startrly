@@ -58,8 +58,8 @@ nav ul li {
   /* center container on page */
   margin: auto;
   /* add a border on top and bottom */
-  border-top: 0.1rem solid black;
-  border-bottom: 0.1rem solid black;
+  border-top: 0.1rem solid gray;
+  border-bottom: 0.1rem solid gray;
   /* make flex container */
   display: flex;
   flex-direction: column;
@@ -119,7 +119,7 @@ nav ul li {
 .flexible {
   /* center section */
   margin: auto;
-  padding: 3em;
+  padding: 1em;
 }
 
 .flexible ul {
@@ -131,12 +131,20 @@ nav ul li {
 /* 'MEET THE TEAM' */
 
 #meet_team {
+  margin-top: 2em;
   width: 60vw;
+}
+
+#meet_team ul li {
+  /* add some space between items */
+  padding: 2.5em;
 }
 
 #meet_team ul li img {
   /* make photos round */
   border-radius: 50%;
+  padding: 0.4em;
+  border: 0.05em solid gray;
 }
 
 #meet_team ul li span {
@@ -160,9 +168,10 @@ nav ul li {
 
 /* FOOTER */
 footer {
-  border-top: 0.1em solid black;
+  border-top: 0.1em solid gray;
   display: flex;
   flex-flow: row wrap;
+  margin-top: 4em;
 }
 
 footer div {

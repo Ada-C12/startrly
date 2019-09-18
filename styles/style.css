@@ -1,2 +1,46 @@
 /* style.css */
 
+/* NAV */
+
+nav ul {
+  /* ensure bullet points do not alter item alignment */
+  list-style-position: outside;
+  /* hide bullet points */
+  list-style-type: none;
+  /* make the ul a grid */
+  display: grid;
+  grid-template-columns: 20% 40% 20% 20%;
+}
+
+nav ul li {
+  /* align text to the center of their column */
+  text-align: center;
+}
+
+#homepage {
+  /* `homepage` should be in the left corner */
+  grid-column-start: 1;
+}
+
+#try_now {
+  /* `try_now` should be to the left of the right corner */
+  grid-column-start: 3;
+}
+
+#about {
+  /* `about` should be in the right corner  */
+  grid-column-start: 4;
+}
+
+/* Main Splash */
+#main_splash {
+  /* center splash contents */
+  text-align: center;
+}
+
+#main_splash a {
+  /* moves call to action to its own line */
+  display: block;
+}
+
+/* Blockquotes */

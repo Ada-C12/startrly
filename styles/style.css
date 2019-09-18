@@ -21,6 +21,9 @@ h2 {
 
 nav ul {
   display: grid;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  font-weight: bold;
   grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
@@ -32,7 +35,6 @@ nav ul li {
 #homepage {
   /* `homepage` should be in the left corner */
   grid-column-start: 1;
-  /* padding-left: 0; FAILS TO OVERRIDE */
 }
 
 #try_now {

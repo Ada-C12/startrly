@@ -1,5 +1,9 @@
 /* style.css */
 
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
 ul {
   /* override default 40px left padding */
   padding-inline-start: 0;
@@ -12,7 +16,6 @@ ul {
 h2 {
   text-align: center;
 }
-
 
 /* NAV */
 
@@ -73,6 +76,7 @@ nav ul li {
   padding: 4em;
   font-size: 1.25em;
   font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .blockquote blockquote {

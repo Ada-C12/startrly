@@ -44,3 +44,28 @@ nav ul li {
 }
 
 /* Blockquotes */
+.blockquote {
+  /* center container on page */
+  margin: auto;
+  /* add a border on top and bottom */
+  border-top: 0.1rem solid black;
+  border-bottom: 0.1rem solid black;
+  /* make flex container */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.blockquote blockquote {
+  /* center item within container */
+  align-self: center;
+  /* restrict quote content width */
+  width: 50vw;
+}
+
+.blockquote p {
+  /* align item to right side of container */
+  align-self: flex-end;
+  /* keep quote source on lower right */
+  width: 35vw;
+}

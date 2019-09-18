@@ -22,6 +22,11 @@ nav ul {
   border-bottom-width: thin;
   padding-top: 70px;
   padding-bottom: 70px;
+  background-image: url("https://images.pexels.com/photos/205316/pexels-photo-205316.png?cs=srgb&dl=apple-clean-containers-205316.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #title a {
@@ -30,4 +35,24 @@ nav ul {
   border: solid 2px grey;
   padding: 10px;
   border-radius: 15px;
+}
+
+#quote, #quote2 {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  padding-top: 35px;
+  padding-bottom: 60px;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-bottom-width: thin;
+}
+
+#quote blockquote, #quote2 blockquote {
+  font-size: 25px;
+  text-align: left;
+  margin: 0px 150px 30px 0px;
+  padding: 50px 200px 5px 250px;
+  line-height: 2;
+  content: open-quote;
 }

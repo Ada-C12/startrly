@@ -150,6 +150,7 @@ nav ul li {
 #why_us ul > li {
   flex: 1;
   padding: 1em;
+  margin: 1.6em;
   /* make the list items a flex container */
   display: flex;
   flex-flow: row wrap;

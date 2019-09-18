@@ -105,7 +105,8 @@ nav ul li {
   /* add some space */
   padding: 4em;
   /* modify font */
-  font-size: 1.25em;
+  font-size: 1.5em;
+  line-height: 2em;
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -114,7 +115,7 @@ nav ul li {
   /* center item within container */
   align-self: center;
   /* restrict quote content width */
-  width: 50vw;
+  width: 60vw;
 }
 
 .blockquote blockquote::before {
@@ -129,7 +130,7 @@ nav ul li {
   /* align item to right side of container */
   align-self: flex-end;
   /* keep quote source on lower right */
-  width: 28vw;
+  width: 20vw;
 }
 
 .blockquote p::before {

@@ -1,0 +1,25 @@
+body {
+  font-family: Arial;
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr;
+  position: relative;
+}
+
+#title {
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-bottom-width: thin;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}

@@ -51,11 +51,39 @@ nav ul li {
 #main_splash {
   /* center splash contents */
   text-align: center;
+  padding: 4em;
+}
+
+#main_splash h1 {
+  font-size: 3em;
+}
+
+#main_splash sub {
+  font-weight: bold;
+}
+
+#main_splash a, #main_splash sub {
+  font-size: 1.5em;
 }
 
 #main_splash a {
-  /* moves call to action to its own line */
+  /* moves item to its own line */
   display: block;
+  /* sets the width to be small */
+  width: 17%;
+  /* centers the item on the page */
+  margin: auto;
+  /* adds some space above and below */
+  margin-top: 2em;
+  margin-bottom: 1em;
+  /* bumps out the border */
+  padding: 0.8em;
+  /* adds a border */
+  border: 0.15em solid lightgray;
+  border-radius: 0.5em;
+  /* removes default link styling */
+  text-decoration: none;
+  color: black;
 }
 
 
@@ -74,6 +102,7 @@ nav ul li {
   flex-wrap: wrap;
   /* add some space */
   padding: 4em;
+  /* modify font */
   font-size: 1.25em;
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;

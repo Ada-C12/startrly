@@ -58,12 +58,16 @@ nav ul li {
   /* center container on page */
   margin: auto;
   /* add a border on top and bottom */
-  border-top: 0.1rem solid gray;
-  border-bottom: 0.1rem solid gray;
+  border-top: 0.07rem solid gray;
+  border-bottom: 0.07rem solid gray;
   /* make flex container */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  /* add some space */
+  padding: 4em;
+  font-size: 1.25em;
+  font-style: italic;
 }
 
 .blockquote blockquote {
@@ -73,11 +77,23 @@ nav ul li {
   width: 50vw;
 }
 
+.blockquote blockquote::before {
+  content: "\" "
+}
+
+.blockquote blockquote::after {
+  content: " \""
+}
+
 .blockquote p {
   /* align item to right side of container */
   align-self: flex-end;
   /* keep quote source on lower right */
-  width: 35vw;
+  width: 28vw;
+}
+
+.blockquote p::before {
+  content: "-- "
 }
 
 
@@ -168,7 +184,7 @@ nav ul li {
 
 /* FOOTER */
 footer {
-  border-top: 0.1em solid gray;
+  border-top: 0.07em solid gray;
   display: flex;
   flex-flow: row wrap;
   margin-top: 4em;

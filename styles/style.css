@@ -5,6 +5,7 @@ ul {
   padding-inline-start: 0;
 }
 
+
 /* NAV */
 
 nav ul {
@@ -38,7 +39,9 @@ nav ul li {
   grid-column-start: 4;
 }
 
-/* Main Splash */
+
+/* MAIN SPLASH */
+
 #main_splash {
   /* center splash contents */
   text-align: center;
@@ -48,6 +51,7 @@ nav ul li {
   /* moves call to action to its own line */
   display: block;
 }
+
 
 /* BLOCKQUOTES */
 
@@ -76,6 +80,7 @@ nav ul li {
   /* keep quote source on lower right */
   width: 35vw;
 }
+
 
 /* 'WHY?' SECTION */
 
@@ -108,4 +113,31 @@ nav ul li {
 
 #why_us ul li div {
   flex: 1;
+}
+
+/* 'MEET THE TEAM' SECTION */
+
+#team_members h2 {
+  text-align: center;
+}
+
+#team_members ul {
+  /* ensure bullet points do not alter item alignment */
+  list-style-position: outside;
+  /* hide bullet points */
+  list-style-type: none;
+  /* center section */
+  width: 60vw;
+  margin: auto;
+  /* make the list a flex container */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+#team_members ul li span {
+  /* put text on new lines */
+  display: block;
+  /* center text */
+  text-align: center;
 }

@@ -1,5 +1,10 @@
 /* style.css */
 
+ul {
+  /* override default 40px left padding */
+  padding-inline-start: 0;
+}
+
 /* NAV */
 
 nav ul {
@@ -9,7 +14,7 @@ nav ul {
   list-style-type: none;
   /* make the ul a grid */
   display: grid;
-  grid-template-columns: 20% 40% 20% 20%;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
 nav ul li {
@@ -20,6 +25,7 @@ nav ul li {
 #homepage {
   /* `homepage` should be in the left corner */
   grid-column-start: 1;
+  /* padding-left: 0; FAILS TO OVERRIDE */
 }
 
 #try_now {
@@ -43,7 +49,8 @@ nav ul li {
   display: block;
 }
 
-/* Blockquotes */
+/* BLOCKQUOTES */
+
 .blockquote {
   /* center container on page */
   margin: auto;
@@ -68,4 +75,37 @@ nav ul li {
   align-self: flex-end;
   /* keep quote source on lower right */
   width: 35vw;
+}
+
+/* 'WHY?' SECTION */
+
+#why_us h2 {
+  text-align: center;
+}
+
+#why_us ul {
+  /* ensure bullet points do not alter item alignment */
+  list-style-position: outside;
+  /* hide bullet points */
+  list-style-type: none;
+  /* make the list a flex container */
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#why_us ul > li {
+  flex: 1;
+  /* make the list items a flex container */
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#why_us ul li img {
+  /* control image size */
+  width: 6em;
+  height: 6em;
+}
+
+#why_us ul li div {
+  flex: 1;
 }

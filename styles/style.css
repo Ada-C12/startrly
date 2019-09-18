@@ -62,6 +62,7 @@ nav ul li {
 
 #main_splash sub {
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 #main_splash a, #main_splash sub {

@@ -23,3 +23,11 @@ nav ul {
   padding-top: 70px;
   padding-bottom: 70px;
 }
+
+#title a {
+  display: inline-block;
+  margin: 50px;
+  border: solid 2px grey;
+  padding: 10px;
+  border-radius: 15px;
+}

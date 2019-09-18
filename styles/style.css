@@ -115,29 +115,48 @@ nav ul li {
   flex: 1;
 }
 
-/* 'MEET THE TEAM' SECTION */
+/* 'MEET THE TEAM' and 'SPONSORS' SECTIONS */
 
-#team_members h2 {
+.flexible h2 {
   text-align: center;
 }
 
-#team_members ul {
+.flexible {
+  /* center section */
+  margin: auto;
+}
+
+.flexible ul {
   /* ensure bullet points do not alter item alignment */
   list-style-position: outside;
   /* hide bullet points */
   list-style-type: none;
-  /* center section */
-  width: 60vw;
-  margin: auto;
   /* make the list a flex container */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
 
-#team_members ul li span {
+/* 'MEET THE TEAM' */
+
+#meet_team {
+  width: 60vw;
+}
+
+#meet_team ul li span {
   /* put text on new lines */
   display: block;
   /* center text */
   text-align: center;
+}
+
+/* SPONSORS */
+
+#sponsors {
+  width: 80vw;
+}
+
+#sponsors ul li {
+  /* height: min-content; */
+  align-self: center;
 }

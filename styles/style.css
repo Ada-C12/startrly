@@ -9,6 +9,10 @@ ul {
   list-style-type: none;
 }
 
+h2 {
+  text-align: center;
+}
+
 
 /* NAV */
 
@@ -57,6 +61,7 @@ nav ul li {
 .blockquote {
   /* center container on page */
   margin: auto;
+  margin-bottom: 2.5em;
   /* add a border on top and bottom */
   border-top: 0.07rem solid gray;
   border-bottom: 0.07rem solid gray;
@@ -99,17 +104,16 @@ nav ul li {
 
 /* 'WHY?' SECTION */
 
-#why_us h2 {
-  text-align: center;
-}
-
 #why_us ul {
+  width: 90vw;
+  margin: auto;
   display: flex;
   flex-flow: row wrap;
 }
 
 #why_us ul > li {
   flex: 1;
+  padding: 1em;
   /* make the list items a flex container */
   display: flex;
   flex-flow: row wrap;
@@ -123,14 +127,10 @@ nav ul li {
 
 #why_us ul li div {
   flex: 1;
+  padding-left: 0.6em;
 }
 
 /* 'MEET THE TEAM' and 'SPONSORS' SECTIONS */
-
-.flexible h2 {
-  text-align: center;
-  margin-bottom: 2em;
-}
 
 .flexible {
   /* center section */
@@ -147,7 +147,6 @@ nav ul li {
 /* 'MEET THE TEAM' */
 
 #meet_team {
-  margin-top: 2em;
   width: 60vw;
 }
 
@@ -174,6 +173,10 @@ nav ul li {
 
 #sponsors {
   width: 80vw;
+}
+
+#sponsors h2 {
+  margin-bottom: 2em;
 }
 
 #sponsors ul li {

@@ -3,17 +3,16 @@
 ul {
   /* override default 40px left padding */
   padding-inline-start: 0;
+  /* ensure bullet points do not alter item alignment */
+  list-style-position: outside;
+  /* hide bullet points */
+  list-style-type: none;
 }
 
 
 /* NAV */
 
 nav ul {
-  /* ensure bullet points do not alter item alignment */
-  list-style-position: outside;
-  /* hide bullet points */
-  list-style-type: none;
-  /* make the ul a grid */
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 1fr;
 }
@@ -89,11 +88,6 @@ nav ul li {
 }
 
 #why_us ul {
-  /* ensure bullet points do not alter item alignment */
-  list-style-position: outside;
-  /* hide bullet points */
-  list-style-type: none;
-  /* make the list a flex container */
   display: flex;
   flex-flow: row wrap;
 }
@@ -127,11 +121,6 @@ nav ul li {
 }
 
 .flexible ul {
-  /* ensure bullet points do not alter item alignment */
-  list-style-position: outside;
-  /* hide bullet points */
-  list-style-type: none;
-  /* make the list a flex container */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -159,4 +148,12 @@ nav ul li {
 #sponsors ul li {
   /* height: min-content; */
   align-self: center;
+}
+
+
+/* FOOTER */
+footer {
+  border-top: 0.1em solid black;
+  display: flex;
+  flex-flow: row wrap;
 }

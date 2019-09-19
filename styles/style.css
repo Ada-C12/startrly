@@ -2,6 +2,10 @@ html {
   font-family: sans-serif;
 }
 
+section {
+  text-align: center;
+}
+
 nav>ul {
   display: flex;
 }
@@ -13,4 +17,34 @@ nav li {
 
 #home {
   margin-right: 12em;
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#banner>* {
+  min-height: 2rem;
+}
+
+#banner>sub {
+ font-weight: bold;
+}
+
+#banner>h1 {
+  height: 2rem;
+}
+
+#banner a {
+  width: 10em;
+  
+  font-size: .75em;
+  text-decoration: none;
+  color: black;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding-top: 1em;
 }

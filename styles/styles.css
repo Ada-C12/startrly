@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
 
 body {
-  font-family: Manjari;
+  font-family: "Manjari";
   border: solid whitesmoke 5px;
 }
 
@@ -86,6 +86,10 @@ h2 {
 
 #quote blockquote:after, #quote2 blockquote:after {
   content: close-quote;
+}
+
+#quote p:before, #quote2 p:before {
+  content: "--"
 }
 
 #quote p, #quote2 p {

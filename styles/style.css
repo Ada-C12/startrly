@@ -67,21 +67,50 @@ section a {
 }
 
 .quote {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 12% 58% 15% 15%;
+  grid-template-rows: repeat(5, 20%);
+  /* flex-direction: column;
+  flex-wrap: wrap; */
 }
 
+.quote blockquote::before {
+  content: '"';
+} 
+
+.quote blockquote::after {
+  content: '"';
+} 
+
 .quote blockquote {
-  margin-top: 5em;
+  font-size: 1.3em;
+  line-height: 225%;
+  margin-top: 1.6em;
+  text-align: left;
+  grid-column-start: 2;
+  grid-column-end: span 2;
+  grid-row-start: 2;
+  grid-row-end: span 2;
 }
 
 .quote p {
-  margin-bottom: 5em
+  font-size: 1.2em;
+  margin-bottom: 8em;
+  grid-column-start: 3;
+  grid-column-end: span 2;
+  grid-row-start: 4;
+
+}
+
+.quote p::before {
+  content: "-- "
 }
 
 .why {
   border-top: 1px solid black;
+
+
+
 
 
 

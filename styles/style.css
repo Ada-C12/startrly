@@ -1,1 +1,20 @@
 /* start with creating a flexbox for nav bar */
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  flex-direction: row;
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul:first-child {
+  display: flex;
+  /* justify-content: flex-start;
+  flex-direction: flex-start; */
+  align-items: flex-start;
+}

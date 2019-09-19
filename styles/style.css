@@ -62,6 +62,7 @@ section>ul {
   display: flex;
   justify-content: center;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 #reasons li {
@@ -84,7 +85,13 @@ section>ul {
   font-size: .66em;
 }
 
+#team li {
+  display: flex;
+  flex-direction: column;
+  margin: 5em;
+}
 
-section>ul>li>* {
-  border: 1px solid red;
+#team img {
+  border: 2px lightgrey inset;
+  border-radius: 100px
 }

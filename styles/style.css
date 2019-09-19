@@ -11,7 +11,7 @@ nav ul {
   font-weight: bold;
   display: grid;
   grid-template-columns: repeat(5, 20%);
-  margin-top: 4.5em;
+  margin-top: 4.8em;
 }
 
 #startrly {
@@ -95,7 +95,7 @@ section a {
 
 .quote p {
   font-size: 1.2em;
-  margin-bottom: 8em;
+  margin-bottom: 8.2em;
   grid-column-start: 3;
   grid-column-end: span 2;
   grid-row-start: 4;
@@ -117,35 +117,30 @@ h2 {
 }
 
 .why {
-  /* border: 1px solid blue; */
-  /* width: min-content; */
-  /* height: min-content; */
   display: grid;
   justify-items: start;
-  width: 95%;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
-  /* padding:20px; */
-  /* justify-content: space-between; */
-  margin-bottom: 3.2em;
+  margin-bottom: 10.7em;
+  
 }
 
 .why > li {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
-  /* height: min-content; */
-  /* width: min-content; */
-  /* height: min-content;    this one is good, but not even */
+}
 
-
+.why .image {
+  /* border: 1px solid red; */
 }
 
 .why .image-text {
   text-align: left;
-  /* border: 1px solid blue; */
   padding-left: .5em;
-  padding-right: 7em;
+  padding-right: 2em;
+  height: 3em
 }
 
 section .image-text {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }

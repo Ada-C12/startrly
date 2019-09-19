@@ -28,8 +28,11 @@ ul {
   padding: 5%;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: 'Cinzel Decorative', cursive;
+}
+
+h1 {
   font-size: 4rem;
 }
 
@@ -55,6 +58,7 @@ section > sub {
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
 }
 
 #meet-the-team > ul {

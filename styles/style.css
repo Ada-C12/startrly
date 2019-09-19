@@ -144,3 +144,21 @@ h2 {
 section .image-text {
   font-size: 1.2em;
 }
+
+
+
+.team {
+  display: grid;
+  justify-items: start;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 50%)
+  margin-bottom: 10.7em;
+  
+}
+
+.team > li {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column
+}

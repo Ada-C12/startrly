@@ -25,11 +25,7 @@ body {
   justify-content: space-evenly;
   height: 5vw;
 }
-/* .nav_menu ul li{
-  justify-content: flex-end;
-  align-items: end;
-  background-color: blue;
-}*/
+
 
 .nav_menu ul li:first-child{
   flex-grow: 0.5;
@@ -74,7 +70,7 @@ body {
 
 .quote {
   display: grid;
-  grid-template: 1fr/ 1fr;
+  grid-template: 1fr / 1fr;
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.2em;
@@ -85,6 +81,7 @@ body {
   padding-bottom: 7vh;
 }
 
+/* remove later */
 .quote>* {
   border: 2px solid lightblue;
 }
@@ -110,11 +107,29 @@ body {
 
 .item_list ul {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  align-items: space-between;
+  flex-flow: row wrap;
 }
 
 .item_list ul li {
+
+  width: 300px;  /* Or whatever */
+  height: 150px; /* Or whatever */
+  margin: auto;  
+
+}
+
+
+.item_list ul li img {
+  display: inline;
+  float: left;
+  border: 4px solid white;
+}
+
+.item_list ul>* {
+  border: 2px solid lightblue;
+}
+
+.item_list ul {
   list-style-type: none;
 }

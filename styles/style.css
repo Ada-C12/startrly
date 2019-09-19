@@ -40,11 +40,20 @@ nav li {
 
 #banner a {
   width: 10em;
-  
+  height: 2em;
   font-size: .75em;
   text-decoration: none;
   color: black;
   border: 1px solid lightgrey;
-  border-radius: 10px;
-  padding-top: 1em;
+  border-radius: 6px;
+  padding-top: 1.5em;
+}
+
+.quote {
+  font-style: italic;
+  font-size: .75em;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  margin: 2em;
+  padding: 1em;
 }

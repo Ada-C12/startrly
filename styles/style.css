@@ -1,20 +1,69 @@
-/* start with creating a flexbox for nav bar */
-.container {
-  width: 50%;
+.nav-container {
   display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  padding-inline-start: 0px;
 }
 
-nav ul li {
-  flex-direction: row;
+.nav-container * {
+  font-family: 'Roboto', sans-serif;
+}
+
+#startrly {
+  display: flex;
   list-style-type: none;
-  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  flex-basis: 30%;
 }
 
-nav ul:first-child {
+#try-now {
   display: flex;
-  /* justify-content: flex-start;
-  flex-direction: flex-start; */
-  align-items: flex-start;
+  list-style-type: none;
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
+
+#about {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.section-one-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center
+}
+
+.section-one-container * {
+  font-family: 'Roboto', sans-serif;
+}
+
+sub {
+  padding: 2rem;
+}
+
+a[href="#"] {
+  background-color: white;
+  color: black;
+  border: 2px solid gray;
+  border-radius: 10%;
+  padding: 2px 5px;
+  align-self: center;
+  text-decoration: none;
+}
+
+.section-blockquote-one-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: gray;
+}
+
+

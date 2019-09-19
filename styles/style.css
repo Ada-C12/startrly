@@ -109,8 +109,8 @@ blockquote:after {
 #why > ul {
   display: grid;
   grid-template: 1fr / 1fr 1fr 1fr;
-  margin-left: 8vw;
-  margin-right: 8vw;
+  margin-left: 7vw;
+  margin-right: 7vw;
   margin-top: 3vw;
   margin-bottom: 3vw;
   padding: 0%;
@@ -136,6 +136,7 @@ blockquote:after {
 
 #meet-the-team > h2 {
   margin: 3rem;
+  margin-bottom: 0;
 }
 
 #meet-the-team > ul {

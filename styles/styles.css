@@ -144,3 +144,17 @@ h2 {
   padding: 8%;
 }
 
+#sponsors ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    width: 270px;
+  }
+}
+

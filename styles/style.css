@@ -47,6 +47,7 @@ h1 {
 
 section {
   border-bottom: solid gray 1px;
+  min-height: 100px;
 }
 
 section > sub {
@@ -54,11 +55,30 @@ section > sub {
   font-weight: bold;
 }
 
+strong {
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 2.5rem;
+}
+
 #why > ul {
-  border: solid;
   display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-rows: 3fr;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 0%;
+}
+
+#why li {
+  max-width: 22rem;
+}
+
+#why li > img {
+  float: left;
+  margin: 5px;
+  margin-top: 0px;
 }
 
 #meet-the-team {

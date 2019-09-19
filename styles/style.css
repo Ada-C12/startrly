@@ -484,19 +484,16 @@ footer li:active {
   }
 
   #meet_team ul li img {
-    border: 1px solid blue;
     height: 22vw;
   }
   
   /* grid stuff  */
   #meet_team ul {
-    border: 1px solid blue;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 1em;
   }
 
   #meet_team ul li span {
-    border: 1px solid blue;
     padding: 0.2em;
   }
 

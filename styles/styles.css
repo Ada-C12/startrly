@@ -105,3 +105,27 @@ h2 {
   border-bottom-color: gray;
   border-bottom-width: thin;
 }
+
+#why img {
+  float: left;
+  padding-right: 15px;
+}
+
+#team {
+  padding-top: 40px;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-bottom-width: thin;
+}
+
+#team img {
+  border-radius: 50%;
+  flex-wrap: wrap;
+  padding-bottom: 10%;
+}
+
+#team ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}

@@ -1,15 +1,6 @@
 
-/* - CSS Grid
-- flexbox */
-
-
-html {
-  background-color: pink;
-  }
-
 body {
-  font-family: 'Muli', sans-serif;
-  
+  font-family: 'Bree Serif', serif;
 }
 
 ul {
@@ -17,58 +8,128 @@ list-style-type: none;
 }
 
 nav ul {
-  background-color: grey;
-  display: grid;
-  grid-template: 1/6;
-}
-
-.name {
-  grid-column: 1;
-}
-
-.try {
-  grid-column: 5;
-}
-
-.about {
-  grid-column: 6;
-}
-
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  }
+  
+  .start {
+  flex-basis: 70%;
+  }
 
 .headline {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
   height: 20rem;
-  background-color: chartreuse; 
   flex-basis: auto;
   justify-content: center;
   align-self: space-around;
-  /* text-align: center; */ 
-
+  background-image: url("../images/tulip.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color:#eaf0e1
 }
 
 .headline h1 {
-  font-size: 3em;
+  font-size: 3rem;
   margin: auto;
 }
 
 .headline sub {
-  margin: auto;
+  margin: 2em;
+  align-self: center;
   font-style: italic;
-  font-size: 1em;
+  font-size: 1rem;
   flex-wrap: wrap;
 }
 
 .headline a {
   margin: 2em;
   align-self: center;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color: black;
-  border: none;
-  color: white;
-  padding: 1em;
-  background-color: grey;
+  border: 2px black;
+  padding: .5em;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  background-color: #718a4c;
+  font-size: .5rem;
+}
 
+.block {
+  margin: 75px 20px 75px 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-style: oblique;
+  border: 20rem;
+}
+
+section p {
+  text-align: right;
+}
+
+.comfortable {
+  content: url("");
+  width: 100px;
+height: 100px;
+}
+
+.kiwi {
+  content: url("images/flora-flower-leaves-2395244.jpg");
+  width: 100px;
+  heigth: 100px;
+  border-radius: 20px;
+}
+
+.dragon {
+  content: url("");
+  width: 100px;
+  height: 100px;
+}
+
+.caribou {
+  content: url("");
+  width: 100px;
+  height: 100px;
+}
+
+.cheetah {
+  content: url("");
+  width: 100px;
+  height: 100px;
+}
+
+.dugong {
+  content: url("");
+  width: 100px;
+  height: 100px;
+}
+
+.bottom {
+
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row-wrap;
+}
+
+.footer {
+  font-size: .7rem;
+  display: grid;
+  grid-template: 1/3;
+  margin: 25px 50px 75px 100px;
+  text-align: left;
+}
+
+.support {
+  grid-column: 1;
+}
+
+.about {
+  grid-column: 2;
 }

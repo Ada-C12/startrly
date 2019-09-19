@@ -3,8 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
 
+
 body {
   font-family: 'Open Sans';
+  background-color: #4ED8FF;
 }
 
 ul {
@@ -30,17 +32,34 @@ h2 {
 
 /* NAV */
 
+nav {
+  /* background-color: #202020; */
+  background-color: #112A32;
+  border: 0.09em solid #112A32;
+}
+
 nav ul {
   display: grid;
-  margin-top: 3em;
-  margin-bottom: 2em;
+  margin: 2.5em 2em 2em 2em;
   font-weight: bold;
   grid-template-columns: 1fr 2fr 1fr 1fr;
+  column-gap: 2em;
 }
 
 nav ul li {
   /* align text to the center of their column */
   text-align: center;
+  background-color: #33849B;
+  padding: 0.5em;
+  border-radius: 2em;
+  /* add a light shadow to add contrast against the background */
+  text-shadow: #99e8ff 0 0 1em;
+}
+
+nav ul li:hover {
+  background-color: #5444ad;
+  color: #F0F0F0;
+  text-shadow: none;
 }
 
 #homepage {
@@ -67,7 +86,15 @@ nav ul li {
 }
 
 #main_splash h1 {
-  font-size: 3em;
+  font-size: 5em;
+  color: #FAC04C;
+  width: 100%;
+  padding: 0.2em;
+  margin: auto;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  background-color: #33849B;
+  border-radius: 2em;
 }
 
 #main_splash sub {
@@ -92,11 +119,18 @@ nav ul li {
   /* bumps out the border */
   padding: 0.8em;
   /* adds a border */
-  border: 0.15em solid lightgray;
+  border: 0.15em solid #5444ad;
   border-radius: 0.5em;
   /* removes default link styling */
   text-decoration: none;
   color: black;
+  background-color: #FAC04C;
+}
+
+#main_splash a:hover {
+  color: #F0F0F0;
+  border: 0.15em solid #FAC04C;
+  background-color: #5444ad;
 }
 
 
@@ -107,8 +141,8 @@ nav ul li {
   margin: auto;
   margin-bottom: 2.5em;
   /* add a border on top and bottom */
-  border-top: 0.07rem solid gray;
-  border-bottom: 0.07rem solid gray;
+  border-top: 0.09rem solid #112A32;
+  border-bottom: 0.09rem solid #112A32;
   /* make flex container */
   display: flex;
   flex-direction: column;
@@ -119,6 +153,12 @@ nav ul li {
   font-size: 1.4em;
   line-height: 2em;
   font-style: italic;
+}
+
+.blockquote blockquote, .blockquote p {
+  background-color: #3abce0;
+  padding: 1em;
+  border-radius: 2em;
 }
 
 .blockquote blockquote {
@@ -164,17 +204,30 @@ nav ul li {
   /* make the list items a flex container */
   display: flex;
   flex-flow: row wrap;
+  background-color: #33849B;
+  border-radius: 1em;
+}
+
+#why_us strong {
+  color: #FAC04C;
+  padding: 0.2em;
 }
 
 #why_us ul li img {
   /* control image size */
   width: 6em;
   height: 6em;
+  padding: 0.1em;
+  background-color: #F0F0F0;
 }
 
 #why_us ul li div {
   flex: 1;
   padding-left: 0.6em;
+}
+
+#why_us p {
+  text-shadow: #99e8ff 0 0 2em;
 }
 
 /* 'MEET THE TEAM' and 'SPONSORS' SECTIONS */
@@ -206,7 +259,8 @@ nav ul li {
   /* make photos round */
   border-radius: 50%;
   padding: 0.4em;
-  border: 0.05em solid gray;
+  border: 0.05em solid #202020;
+  background-color: #FAC04C;
 }
 
 #meet_team ul li span {
@@ -226,20 +280,42 @@ nav ul li {
   margin-bottom: 2em;
 }
 
+#sponsors ul {
+  border-radius: 3em;
+}
+
 #sponsors ul li {
   /* height: min-content; */
   align-self: center;
+  padding: 0.1em 0.1em 0em 0.1em;
+  background-color: #F0F0F0;
 }
 
 
 /* FOOTER */
 footer {
-  border-top: 0.07em solid gray;
+  border-top: 0.09em solid #112A32;
   display: flex;
   flex-flow: row wrap;
   margin-top: 4em;
+  background-color: #112A32;
 }
 
 footer div {
   padding: 1em 4em 4em 5em;
+}
+
+footer div > * {
+  background-color: #33849B;
+  padding: 1em;
+  border-radius: 2em;
+  text-shadow: #99e8ff 0 0 1em;
+}
+
+footer ul:hover {
+  background-color: #5444ad;
+}
+
+footer li:hover {
+  color: #F0F0F0;
 }

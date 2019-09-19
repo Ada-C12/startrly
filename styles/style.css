@@ -47,7 +47,7 @@ h1 {
 
 section {
   border-bottom: solid gray 1px;
-  min-height: 100px;
+  min-height: 200px;
 }
 
 section > sub {
@@ -61,6 +61,38 @@ strong {
 
 h2 {
   margin-top: 2.5rem;
+}
+
+.quote {
+  min-height: 20vw;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: 'Cinzel Decorative', cursive;
+  line-height: 2;
+  padding: 3em;
+}
+
+blockquote {
+  margin: 3em;
+}
+
+blockquote:before {
+  content: open-quote;
+  font-size: 2rem;
+}
+
+blockquote:after {
+  content: close-quote;
+  font-size: 2rem;
+}
+
+.quote > p:before {
+  content: "--"
+}
+
+.quote > p {
+  text-align: right;
+  margin-right: 3rem;
 }
 
 #why {

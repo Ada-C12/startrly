@@ -12,8 +12,6 @@ body {
 ul {
   /* override default 40px left padding */
   padding-inline-start: 0;
-  /* ensure bullet points do not alter item alignment */
-  list-style-position: outside;
   /* hide bullet points */
   list-style-type: none;
 }
@@ -26,21 +24,26 @@ h2 {
   font-family: 'Sigmar One';
 }
 
-.sub_header {
+.accent {
   font-family: 'Unica One';
 }
+
 
 /* NAV */
 
 nav {
+  /* background-color: #112A32; */
   /* background-color: #202020; */
-  background-color: #112A32;
-  border: 0.09em solid #112A32;
+  background-color: rgba(32,32,32,98%);
+  border: 0.09em solid black;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 nav ul {
   display: grid;
-  margin: 2.5em 2em 2em 2em;
+  margin: 1.5em;
   font-weight: bold;
   grid-template-columns: 1fr 2fr 1fr 1fr;
   column-gap: 2em;
@@ -49,11 +52,13 @@ nav ul {
 nav ul li {
   /* align text to the center of their column */
   text-align: center;
-  background-color: #33849B;
   padding: 0.5em;
   border-radius: 2em;
+  /* background-color: #33849B; */
+  background-color: #666666;
   /* add a light shadow to add contrast against the background */
-  text-shadow: #99e8ff 0 0 1em;
+  /* text-shadow: #99e8ff 0 0 1em; */
+  text-shadow: #808080 0 0 1em;
 }
 
 nav ul li:hover {
@@ -83,23 +88,34 @@ nav ul li:hover {
   /* center splash contents */
   text-align: center;
   padding: 4em;
+  /* source: https://www.pexels.com/photo/close-view-of-hornbill-2222452/ */
+  background-image: url("animal-animal-photography-avian-2222452.jpg");
+  /* parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #main_splash h1 {
-  font-size: 5em;
+  border: 1px solid #F0F0F0;
+  font-size: 7vw;
   color: #FAC04C;
   width: 100%;
   padding: 0.2em;
   margin: auto;
-  margin-top: 0.7em;
+  margin-top: 1.7em;
   margin-bottom: 0.7em;
   background-color: #33849B;
   border-radius: 2em;
 }
 
 #main_splash sub {
+  line-height: 1.5em;
   font-weight: bold;
   text-transform: capitalize;
+  color: #F0F0F0;
+  text-shadow: black 0 0 0.3em;
 }
 
 #main_splash a, #main_splash sub {
@@ -110,12 +126,12 @@ nav ul li:hover {
   /* moves item to its own line */
   display: block;
   /* sets the width to be small */
-  width: 17%;
+  width: 20%;
   /* centers the item on the page */
   margin: auto;
   /* adds some space above and below */
   margin-top: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   /* bumps out the border */
   padding: 0.8em;
   /* adds a border */
@@ -259,6 +275,7 @@ nav ul li:hover {
   /* make photos round */
   border-radius: 50%;
   padding: 0.4em;
+  margin-bottom: 1em;
   border: 0.05em solid #202020;
   background-color: #FAC04C;
 }
@@ -280,10 +297,6 @@ nav ul li:hover {
   margin-bottom: 2em;
 }
 
-#sponsors ul {
-  border-radius: 3em;
-}
-
 #sponsors ul li {
   /* height: min-content; */
   align-self: center;
@@ -294,11 +307,12 @@ nav ul li:hover {
 
 /* FOOTER */
 footer {
-  border-top: 0.09em solid #112A32;
+  /* background-color: #112A32; */
+  background-color: #202020;
+  border-top: 0.09em solid black;
   display: flex;
   flex-flow: row wrap;
   margin-top: 4em;
-  background-color: #112A32;
 }
 
 footer div {
@@ -306,10 +320,12 @@ footer div {
 }
 
 footer div > * {
-  background-color: #33849B;
+  /* background-color: #33849B; */
+  background-color: #666666;
+  /* text-shadow: #99e8ff 0 0 1em; */
+  text-shadow: #808080 0 0 1em;
   padding: 1em;
   border-radius: 2em;
-  text-shadow: #99e8ff 0 0 1em;
 }
 
 footer ul:hover {
@@ -318,4 +334,111 @@ footer ul:hover {
 
 footer li:hover {
   color: #F0F0F0;
+}
+
+
+@media only screen and (max-width: 800px) {  
+  /* NAV */
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  #homepage {
+    margin-right: auto;
+  }
+
+  #try_now {
+    align-self: flex-end;
+  }
+
+
+  /* MAIN SPLASH */
+
+  #main_splash h1 {
+    border: 1px solid #F0F0F0;
+    font-size: 12vw;
+  }
+
+  #main_splash sub {
+    line-height: 1.5em;
+  }
+
+  #main_splash a {
+    width: 50%;
+    font-size: 4vw;
+  }
+
+
+  /* BLOCKQUOTES */
+
+  .blockquote {
+    padding: 2em;
+    font-size: 3vw;
+  }
+
+  .blockquote blockquote {
+    width: 65vw;
+  }
+
+
+  /* 'WHY?' SECTION */
+
+  #why_us ul {
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+
+  #why_us img {
+    display: none;
+  }
+
+  #why_us ul li div {
+    padding: 1.2em;
+    font-size: 3vw;
+  }
+
+
+  /* 'MEET THE TEAM' */
+
+  #meet_team {
+    width: 80vw;
+  }
+
+  #meet_team ul li {
+    width: 20vw;
+  }
+
+  #meet_team ul li img {
+    height: 23vw;
+  }
+
+  #meet_team ul li span {
+    font-size: 0.9em;
+  }
+
+
+  /* SPONSORS */
+
+  #sponsors {
+    width: 80vw;
+  }
+
+  #sponsors ul li {
+    margin: 0.2em;
+  }
+
+  /* FOOTER */
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer div {
+    width: 50%;
+    margin: auto;
+    padding: 1em;
+  }
+
 }

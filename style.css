@@ -1,37 +1,57 @@
-* {
+/* * {
   border: black 1px solid;
-}
+} */
 nav ul {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: grid;
   grid-template: 40px / 3fr 2fr 2fr;
-  background-color: aqua;
+  /* background-color: aqua; */
+  list-style: none;
 }
 
 nav ul li:first-of-type{
   grid-column-start: 1;
   grid-column-end: 2;
-  color: orange;
+  /* color: orange; */
 }
 
 nav ul li:nth-of-type(2) {
   grid-column-start: 2;
   grid-column-end: 3;
-  color: red;
+  /* color: red; */
+  text-align: right;
 } 
 
 nav ul li:nth-of-type(3) {
   grid-column-start: 3;
-  color: purple;
+  /* color: purple; */
+  text-align: center;
 } 
 
-section h1 {
-  text-align: center;
+div>section:first-of-type {
+  /* border: 2px solid limegreen; */
+  display: grid;
+  grid-template: 150px 50px 50px / 1fr;
+  /* background-color: limegreen; */
+  align-items: center;
+  justify-items: center;
 }
 
-div>section:first-of-type {
-  border: 2px solid limegreen;
-  display: grid;
-  grid-column-start: 80px 40px 40px;
-  background-color: limegreen;
+div>section:first-of-type h1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /* color: red; */
+}
+
+div>section:first-of-type sub {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  /* color: orange; */
+  font-size: 150%;
+}
+
+div>section:first-of-type a{
+  /* grid-column-start: 1;
+  grid-column-end: 2; */
+  /* color: maroon; */
 }

@@ -62,6 +62,11 @@ nav ul li:hover {
   text-shadow: none;
 }
 
+nav ul li:active {
+  transform: translate(0.2em, 0.2em);
+  box-shadow: 0.3em 0.3em #FAC04C;
+}
+
 #homepage {
   /* `homepage` should be in the left corner */
   grid-column-start: 1;
@@ -138,6 +143,11 @@ nav ul li:hover {
   color: #F0F0F0;
   border: 0.15em solid #FAC04C;
   background-color: #5444ad;
+}
+
+#main_splash a:active {
+  transform: translate(0.2em, 0.2em);
+  box-shadow: 0.4em 0.4em #FAC04C;
 }
 
 
@@ -318,11 +328,15 @@ footer li:hover {
   color: #F0F0F0;
 }
 
+footer li:active {
+  transform: translate(0.1em, 0.1em);
+}
+
 
 @media only screen and (max-width: 800px) {  
 
   /* NAV */
-  
+
   nav ul {
     display: flex;
     flex-flow: row wrap;

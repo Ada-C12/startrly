@@ -162,6 +162,10 @@ a[href="#"] {
 }
 
 /* Meet the team */
+section h2 {
+  text-align: center;
+}
+
 .team-container {
   display: flex;
   flex-flow: row wrap;
@@ -198,6 +202,56 @@ section h2 {
 
 /* consider making footer section a grid? */
 .footer-section-container {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  justify-items: start;
+  font-family: 'Roboto', sans-serif;
+  grid-gap: 5rem;
+  border-top-style: solid;
+  border-color: gray;
+}
+
+.footer-section-container ul li {
+  list-style-type: none;
+}
+
+.header {
+  border-radius: 5px;
+  /* padding: 10px; */
+  padding-left: 2rem;
+  /* padding-bottom: 5px; */
+  
+}
+
+.support {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.about {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.content {
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 2rem;
+}
+
+/* .support-header {
+  grid-area: support-header;
+  color: red;
+  text-align: center;
+} */
+
+
+
+
+
+
+
+/* .footer-section-container {
   display: flex;
   flex-flow: row wrap;
   flex-direction: center;
@@ -226,5 +280,6 @@ section h2 {
   justify-content: center;
   flex-flow: column wrap;
   flex-basis: 30%;
-}
+} */
+
 

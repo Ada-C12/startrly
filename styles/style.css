@@ -35,7 +35,9 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  text-align: center
+  text-align: center;
+  padding-bottom: 5%;
+  
 }
 
 .section-one-container * {
@@ -50,8 +52,8 @@ a[href="#"] {
   background-color: white;
   color: black;
   border: 2px solid gray;
-  border-radius: 10%;
-  padding: 2px 5px;
+  border-radius: 9%;
+  padding: 10px 10px;
   align-self: center;
   text-decoration: none;
 }
@@ -64,6 +66,66 @@ a[href="#"] {
   border-top-style: solid;
   border-bottom-style: solid;
   border-color: gray;
+  background-color: lightsteelblue;
 }
 
+.section-blockquote-one-container blockquote {
+  display: flex;
+  font-style: italic;
+  align-self: center;
+}
+
+.section-blockquote-one-container p {
+  display: flex;
+  justify-content: flex-end;
+  font-style: italic;
+  padding-right: 10%;
+}
+
+.section-blockquote-one-container blockquote:before, .section-blockquote-one-container blockquote:after {
+  content: '"';
+}
+
+.section-blockquote-one-container p:before {
+  content: '-- ';
+}
+
+.footer-section-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: center;
+  border-top: solid;
+  border-top-color: gray;
+  justify-content: flex-start;
+  align-items: flex-start
+
+}
+
+.footer-section-container * {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* #support-footer h3 {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  flex-flow: column wrap;
+  flex-basis: 30%;
+} */
+
+#support-footer li {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  flex-flow: column wrap;
+  flex-basis: 30%;
+}
+
+#about-footer li {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  flex-flow: column wrap;
+  flex-basis: 30%;
+}
 

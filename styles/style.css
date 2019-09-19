@@ -150,15 +150,47 @@ section .image-text {
 .team {
   display: grid;
   justify-items: start;
-  width: 100%;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 50%)
+  width: 95%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50% 50%;
+  /* justify-content: space-around; */
+  justify-items: center;
+  /* align-items: center; */
   margin-bottom: 10.7em;
   
 }
 
 .team > li {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  margin-bottom: 4em
+}
+
+.kari {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.dan {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.chris {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.charles {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }

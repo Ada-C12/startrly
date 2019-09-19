@@ -79,6 +79,7 @@ nav ul li:hover {
   background-color: #5444ad;
   color: #F0F0F0;
   text-shadow: none;
+  cursor: pointer;
 }
 
 nav ul li:active {
@@ -402,6 +403,7 @@ footer ul:hover {
 
 footer li:hover {
   color: #F0F0F0;
+  cursor: pointer;
 }
 
 footer li:active {

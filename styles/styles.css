@@ -51,17 +51,17 @@ font-weight: 600;
  font-family: 'Times New Roman', Times, serif;
  font-style: italic;
  line-height: 2;
- font-size: 14px;
+ font-size: 15px;
  border-top: 1px solid lightgrey;
  border-bottom: 1px solid lightgrey;
+ padding-top: 60px;
+ padding-bottom: 60px;
 }
 
-.quote blockquote {
+.quote blockquote, .quote p{
  width: 70%;
- padding-top: 60px;
- margin-left: 70px;
- padding-bottom: 60px;
-
+ margin-left: 150px;
+margin-right: 100px;
 }
 
 .quote blockquote::before{
@@ -74,7 +74,6 @@ font-weight: 600;
 
 .quote p{
 text-align: right;
-margin-right: 110px;
 }
 
 .quote p::before{
@@ -82,7 +81,7 @@ margin-right: 110px;
 }
 
 .reasons-container {
-height: 300px;
+height: 230px;
 }
 
 .reasons-container h2{

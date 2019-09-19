@@ -57,8 +57,12 @@ section > sub {
 
 #footer {
   display: grid;
-  grid-template-columns: 10% 10%;
-  padding-left: 3%;
+  grid-template-columns: 20% auto;
+  padding-left: 5%;
+}
+
+#footer ul {
+  padding-left: 0;
 }
 
 

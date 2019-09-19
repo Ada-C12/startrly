@@ -30,20 +30,48 @@ section h1 {
 }
 
 section sub {
-  font-size: 2em;
+  font-size: 1.7em;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 section a {
   display: block;
   border-style: solid;
+  border-color: lightgray;
   border-radius: 10px;
-  padding: 1em;
-  margin-left: 45em;
-  margin-right: 45em
+  padding: .8em;
+  margin-left: 31.5em;
+  margin-right: 31.5em;
+  font-size: 1.4em;
+  text-decoration: none;
 
 }
 
-section blockquote {
-  font-style: italic
+.quote {
+  
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.why {
+  display: flex;
+  flex-direction: row;
+}
+
+.team {
+  display: flex;
+  flex-direction: row;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
 }

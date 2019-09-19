@@ -25,6 +25,9 @@ ul {
   padding-inline-start: 0;
   /* hide bullet points */
   list-style-type: none;
+  /* override default list item margin and padding */
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -284,6 +287,56 @@ nav ul li:active {
 
 #meet_team {
   width: 60vw;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+#meet_team h2 {
+  align-self: center;
+}
+
+#meet_team ul {
+  align-self: center;
+  /* grid */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+#meet_team li:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#meet_team li:nth-child(2) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#meet_team li:nth-child(3) {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#meet_team li:nth-child(4) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#meet_team li:last-child {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 #meet_team ul li {
@@ -431,11 +484,55 @@ footer li:active {
   }
 
   #meet_team ul li img {
-    height: 23vw;
+    border: 1px solid blue;
+    height: 22vw;
+  }
+  
+  /* grid stuff  */
+  #meet_team ul {
+    border: 1px solid blue;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1em;
   }
 
   #meet_team ul li span {
-    font-size: 0.9em;
+    border: 1px solid blue;
+    padding: 0.2em;
+  }
+
+  #meet_team li:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #meet_team li:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #meet_team li:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #meet_team li:nth-child(4) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #meet_team li:last-child {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
 
 

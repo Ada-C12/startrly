@@ -15,7 +15,6 @@
   }
 }
 
-
 body {
   font-family: 'Open Sans';
   background-color: #4ED8FF;
@@ -126,12 +125,12 @@ nav ul li:active {
   background-color: #33849B;
   border-radius: 2em;
 
-  /* 2s => fade in should last two seconds */
+  /* 1.5s => fade in should last 1.5 seconds */
   /* ease-in => gradually transition */
   /* 0s => don't delay running the code */
   /* 1 => only run the code once */
   /* explanation from https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load, who used transform instead of opacity */
-  animation: 2s ease-in 0s 1 fadeInOnLoad;
+  animation: 1.5s ease-in 0s 1 fadeInOnLoad;
 }
 
 #main_splash sub {

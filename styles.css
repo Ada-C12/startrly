@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Work+Sans&display=swap');
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0px 0px 50px 0px;
+}
+section {
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+}
+
+
+/* NAVIGATION */
+nav ul {
+  display: grid;
+  grid-template: 1fr / minmax(min-content, 5fr) 1fr 1fr;
+  padding-left: 50px;
+}
+
+
+/* TOP */ 
+.top h1 {
+  font-size: 3em;
+}
+.top sub {
+  font-size: 1.5em;
+  display: block;
+}
+.top a {
+  display: inline-block;
+  border-radius: 10px;
+  border: 2px solid grey;
+  padding: 20px;
+  margin: 60px;
+  text-decoration: none;
+}
+
+/* QUOTES */
+.quote {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  line-height: 200%;
+  padding: 50px 150px 50px 150px;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+.quote p {
+  text-align: right;
+}
+
+/* WHY SECTION */
+.tellmewhy ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: .8em;
+}
+.tellmewhy strong {
+  font-weight: 600px;
+}
+.tellmewhy ul li {
+  display: grid;
+  grid-template: 1fr 5fr / 110px 160px;
+  width: 300px;
+  height: 100px;
+  text-align: left;
+}
+.tellmewhy ul li p {
+  margin: 0;
+}
+.tellmewhy ul li img {
+  grid-row-end: span 2;
+}
+
+
+/* TEAM STUFF */
+.team ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  height: 400px;
+}
+.team ul li:nth-of-type(2n) {
+  flex-direction: column;
+  align-self: flex-end;
+}
+.team img {
+  display: block;
+  border-radius: 50%;
+}
+.team span {
+  display: block;
+}
+
+
+/* SPONSORS */
+.sponsors ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* SUPPORT */
+.support {
+  display: flex;
+  text-align: left;
+}
+.support div {
+  padding: 0px 50px 0px 100px;
+}
+
+

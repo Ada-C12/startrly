@@ -3,6 +3,18 @@
 @import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
 
+/* keyframes code */
+@keyframes fadeInOnLoad {
+  /* start at transparent */
+  0% {
+    opacity: 0;
+  }
+  /* end at opaque */
+  100% {
+    opacity: 1;
+  }
+}
+
 
 body {
   font-family: 'Open Sans';
@@ -113,6 +125,13 @@ nav ul li:active {
   margin-bottom: 0.7em;
   background-color: #33849B;
   border-radius: 2em;
+
+  /* 2s => fade in should last two seconds */
+  /* ease-in => gradually transition */
+  /* 0s => don't delay running the code */
+  /* 1 => only run the code once */
+  /* explanation from https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load, who used transform instead of opacity */
+  animation: 2s ease-in 0s 1 fadeInOnLoad;
 }
 
 #main_splash sub {

@@ -94,7 +94,7 @@ nav ul li:active {
   text-align: center;
   padding: 4em;
   /* source: https://www.pexels.com/photo/close-view-of-hornbill-2222452/ */
-  background-image: url("animal-animal-photography-avian-2222452.jpg");
+  background-image: url("../images/animal-animal-photography-avian-2222452.jpg");
   /* parallax */
   background-attachment: fixed;
   background-position: center;

@@ -4,7 +4,7 @@
   /* center splash contents */
   text-align: center;
   /* source: https://www.pexels.com/photo/assorted-coloured-plastic-dinosaur-toys-970206/ */
-  background-image: url("animals-dinosaur-figurines-970206.jpg");
+  background-image: url("../images/animals-dinosaur-figurines-970206.jpg");
   /* parallax */
   background-attachment: fixed;
   background-position: center;

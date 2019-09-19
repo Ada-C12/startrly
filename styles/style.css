@@ -63,16 +63,22 @@ h2 {
   margin-top: 2.5rem;
 }
 
+#why {
+  min-height: 15vw;
+}
+
 #why > ul {
   display: grid;
   grid-template: 1fr / 1fr 1fr 1fr;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
   padding: 0%;
 }
 
 #why li {
-  max-width: 22rem;
+  max-width: 24vw;
 }
 
 #why li > img {

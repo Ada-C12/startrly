@@ -37,9 +37,10 @@ nav ul {
 
 .headline {
   display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
-  height: 10rem;
-  background-color: gray; 
+  height: 20rem;
+  background-color: chartreuse; 
   flex-basis: auto;
   justify-content: center;
   align-self: space-around;
@@ -48,27 +49,26 @@ nav ul {
 }
 
 .headline h1 {
+  font-size: 3em;
   margin: auto;
 }
 
 .headline sub {
   margin: auto;
   font-style: italic;
-  font-size: 2em;
+  font-size: 1em;
   flex-wrap: wrap;
 }
 
 .headline a {
-  margin: auto;
+  margin: 2em;
+  align-self: center;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: black;
+  border: none;
+  color: white;
+  padding: 1em;
+  background-color: grey;
+
 }
-
-/* 
-blockquote {
-  font-style: italic;
-} */
-
-/* 
-body:last-child {
-  display: flex;
-  flex-direction: column;
-} */

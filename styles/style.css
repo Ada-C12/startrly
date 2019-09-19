@@ -127,12 +127,7 @@ h2 {
 }
 
 .why > li {
-  /* border: 1px solid green; */
   display: flex;
-}
-
-.why .image {
-  /* border: 1px solid red; */
 }
 
 .why .image-text {
@@ -152,9 +147,7 @@ section .image-text {
   width: 85%;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 50% 50%;
-  /* justify-content: space-around; */
   justify-items: center;
-  /* align-items: center; */
   margin-bottom: 7.2em;
   margin-left: 5em;
   margin-right: 5em
@@ -162,7 +155,6 @@ section .image-text {
 }
 
 .team > li {
-  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   margin-bottom: 4em
@@ -215,21 +207,34 @@ section .image-text {
   border-radius: 50%;
   border-color:white;
   border-width: 10px;
-
 }
-
 
 .sponsors {
   display: flex;
   flex-wrap: wrap;
   width: 95%;
   height: 90%;
-  /* margin-left: 5em;
-  margin-right: 5em; */
-  /* height: 15em; */
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 2em
+  padding: 2em;
+  margin-bottom: 4em
 }
 
+.bottom {
+  border-top: 1px solid black;
+  display: flex;
+  text-align: left
+}
+
+.bottom h3 {
+  margin-top: 2.5em;
+  padding-left: 1.4em;
+  font-size: 1.5em;
+}
+
+.bottom .menu {
+  font-size: 1.2em;
+  margin-bottom: 4em;
+  margin-right: 15em
+}

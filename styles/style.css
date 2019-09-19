@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 html {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 section {
   text-align: center;
+}
+
+section:hover {
+  background: white;
+}
+
+section:hover + section {
+  background: #e5e5e5;
 }
 
 ul {

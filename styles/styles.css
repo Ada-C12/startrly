@@ -17,6 +17,7 @@ nav ul {
 
 h2 {
   text-align: center;
+  font-size: 30px;
 }
 
 #title {
@@ -57,7 +58,7 @@ h2 {
   display: block;
   text-align: center;
   font-style: italic;
-  padding-top: 35px;
+  padding-top: 90px;
   padding-bottom: 60px;
   padding-left: 60px;
   border-bottom-style: solid;
@@ -124,7 +125,7 @@ h2 {
 }
 
 #team {
-  padding-top: 40px;
+  padding-top: 50px;
   border-bottom-style: solid;
   border-bottom-color: gray;
   border-bottom-width: thin;
@@ -134,6 +135,7 @@ h2 {
   border-radius: 50%;
   flex-wrap: wrap;
   padding-bottom: 10%;
+  padding-right: 10%;
 }
 
 #team ul {
@@ -148,6 +150,10 @@ h2 {
   align-content: center;
   text-align: center;
   padding: 8%;
+}
+
+#sponsors {
+  padding-top: 50px;
 }
 
 #sponsors ul {

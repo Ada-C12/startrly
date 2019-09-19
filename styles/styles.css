@@ -66,3 +66,20 @@ h2 {
   line-height: 2;
   content: open-quote;
 }
+
+#quote blockquote:before, #quote2 blockquote:before {
+  content: open-quote;
+}
+
+#quote blockquote:after, #quote2 blockquote:after {
+  content: close-quote;
+}
+
+#quote p, #quote2 p {
+  text-align: right;
+  padding-right: 250px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  
+}

@@ -1,0 +1,64 @@
+/* * {
+  border: solid 2px;
+} */
+
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Raleway', sans-serif;
+}
+
+nav ul{
+  display: grid;
+  grid-template: 1fr/ 4fr 2fr 1fr;
+  margin-top: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+.heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 4rem;
+}
+
+[href="#"] {
+  margin: 3em;
+  text-decoration-line: none;
+  padding: 1%;
+  border: solid 1px;
+  border-radius: 5px;
+}
+
+section {
+  border-bottom: solid gray 1px;
+}
+
+section > sub {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#meet-the-team {
+  border-bottom: none;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: 10% 10%;
+  padding-left: 3%;
+}
+
+

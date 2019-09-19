@@ -95,3 +95,22 @@ section>ul {
   border: 2px lightgrey inset;
   border-radius: 100px
 }
+
+#sponsors>ul {
+  justify-content: space-around;
+}
+
+#footer {
+  display: flex;
+  border-top: 1px solid lightgrey;
+}
+
+#footer>div {
+  margin-left: 5em;
+  margin-right: 5em;
+  text-align: left;
+}
+
+#footer ul {
+  list-style: none;
+}

@@ -1,5 +1,6 @@
 body {
   font-family: Arial;
+  border: solid whitesmoke 5px;
 }
 
 nav ul {
@@ -9,6 +10,11 @@ nav ul {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr 1fr;
   position: relative;
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
 }
 
 #title {
@@ -35,6 +41,10 @@ nav ul {
   border: solid 2px grey;
   padding: 10px;
   border-radius: 15px;
+}
+
+#title a:hover {
+  color: burlywood;
 }
 
 #quote, #quote2 {

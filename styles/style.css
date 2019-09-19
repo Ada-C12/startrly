@@ -155,7 +155,7 @@ section .image-text {
   /* justify-content: space-around; */
   justify-items: center;
   /* align-items: center; */
-  margin-bottom: 10.7em;
+  margin-bottom: 7.2em;
   margin-left: 5em;
   margin-right: 5em
   
@@ -166,6 +166,11 @@ section .image-text {
   display: flex;
   flex-direction: column;
   margin-bottom: 4em
+}
+
+.team > li > span {
+  margin-top: 1em;
+  font-size: 1.3em;
 }
 
 .kari {
@@ -212,3 +217,19 @@ section .image-text {
   border-width: 10px;
 
 }
+
+
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  height: 90%;
+  /* margin-left: 5em;
+  margin-right: 5em; */
+  /* height: 15em; */
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2em
+}
+

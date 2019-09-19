@@ -32,8 +32,6 @@ h2 {
 /* NAV */
 
 nav {
-  /* background-color: #112A32; */
-  /* background-color: #202020; */
   background-color: rgba(32,32,32,98%);
   border: 0.09em solid black;
   position: fixed;
@@ -50,14 +48,11 @@ nav ul {
 }
 
 nav ul li {
-  /* align text to the center of their column */
   text-align: center;
   padding: 0.5em;
   border-radius: 2em;
-  /* background-color: #33849B; */
   background-color: #666666;
   /* add a light shadow to add contrast against the background */
-  /* text-shadow: #99e8ff 0 0 1em; */
   text-shadow: #808080 0 0 1em;
 }
 
@@ -125,14 +120,10 @@ nav ul li:hover {
 #main_splash a {
   /* moves item to its own line */
   display: block;
-  /* sets the width to be small */
   width: 20%;
-  /* centers the item on the page */
   margin: auto;
-  /* adds some space above and below */
   margin-top: 2em;
   margin-bottom: 3em;
-  /* bumps out the border */
   padding: 0.8em;
   /* adds a border */
   border: 0.15em solid #5444ad;
@@ -153,7 +144,6 @@ nav ul li:hover {
 /* BLOCKQUOTES */
 
 .blockquote {
-  /* center container on page */
   margin: auto;
   margin-bottom: 2.5em;
   /* add a border on top and bottom */
@@ -163,7 +153,6 @@ nav ul li:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* add some space */
   padding: 4em;
   /* modify font */
   font-size: 1.4em;
@@ -230,7 +219,6 @@ nav ul li:hover {
 }
 
 #why_us ul li img {
-  /* control image size */
   width: 6em;
   height: 6em;
   padding: 0.1em;
@@ -249,7 +237,6 @@ nav ul li:hover {
 /* 'MEET THE TEAM' and 'SPONSORS' SECTIONS */
 
 .flexible {
-  /* center section */
   margin: auto;
   padding: 1em;
 }
@@ -267,7 +254,6 @@ nav ul li:hover {
 }
 
 #meet_team ul li {
-  /* add some space between items */
   padding: 2.5em;
 }
 
@@ -283,7 +269,6 @@ nav ul li:hover {
 #meet_team ul li span {
   /* put text on new lines */
   display: block;
-  /* center text */
   text-align: center;
 }
 
@@ -307,7 +292,6 @@ nav ul li:hover {
 
 /* FOOTER */
 footer {
-  /* background-color: #112A32; */
   background-color: #202020;
   border-top: 0.09em solid black;
   display: flex;
@@ -320,9 +304,7 @@ footer div {
 }
 
 footer div > * {
-  /* background-color: #33849B; */
   background-color: #666666;
-  /* text-shadow: #99e8ff 0 0 1em; */
   text-shadow: #808080 0 0 1em;
   padding: 1em;
   border-radius: 2em;
@@ -338,7 +320,9 @@ footer li:hover {
 
 
 @media only screen and (max-width: 800px) {  
+
   /* NAV */
+  
   nav ul {
     display: flex;
     flex-flow: row wrap;

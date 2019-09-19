@@ -30,6 +30,7 @@ ul {
 
 h1, h2, h3 {
   font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
 }
 
 h1 {
@@ -68,8 +69,8 @@ section > sub {
   background-color: #FAF8AB;
 }
 
-#meet-the-team {
-  margin: 2rem;
+#meet-the-team > h2 {
+  margin: 3rem;
 }
 
 #meet-the-team > ul {
@@ -79,7 +80,7 @@ section > sub {
   align-content: center;
   height: auto;
   width: 60%;
-  margin-left: 20%;
+  margin-left: 18%;
 }
 
 #meet-the-team li {
@@ -94,13 +95,19 @@ section > sub {
   padding: 3px;
   border: solid grey 2px;
   border-radius: 50%;
-  margin-top: 1rem;
+}
 
+#sponsors {
+  display: flex;
+  flex-direction: column;
 }
 
 #sponsors > ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0%;
 }
 
 #footer {
@@ -108,7 +115,9 @@ section > sub {
   grid-template-columns: 20% auto;
   padding-left: 5%;
 }
-
+h3 {
+  text-align: left;
+}
 #footer ul {
   padding-left: 0;
 }

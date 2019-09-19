@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
 body {
-  font-family: Arial;
+  font-family: Manjari;
   border: solid whitesmoke 5px;
 }
 
@@ -38,13 +40,17 @@ h2 {
 #title a {
   display: inline-block;
   margin: 50px;
-  border: solid 2px grey;
+  border: solid 3px grey;
   padding: 10px;
   border-radius: 15px;
 }
 
 #title a:hover {
   color: burlywood;
+}
+
+#title a:active {
+  color: blue;
 }
 
 #quote, #quote2 {
@@ -162,6 +168,10 @@ h2 {
   grid-template-columns: repeat(2, 0.25fr);
   justify-content: flex-start;
   background-color: lightgrey;
+}
+
+#footer h3 {
+  padding-left: 40px;
 }
 
 @media only screen and (max-width: 480px) {

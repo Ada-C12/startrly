@@ -1,6 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  background-color: #aaf0d1
 }
 
 ul {
@@ -145,18 +146,18 @@ section .image-text {
   font-size: 1.2em;
 }
 
-
-
 .team {
   display: grid;
-  justify-items: start;
-  width: 95%;
-  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  width: 85%;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 50% 50%;
   /* justify-content: space-around; */
   justify-items: center;
   /* align-items: center; */
   margin-bottom: 10.7em;
+  margin-left: 5em;
+  margin-right: 5em
   
 }
 
@@ -193,4 +194,21 @@ section .image-text {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+}
+
+.dee {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.team .image {
+  border: 1px solid red;
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  border-color:white;
+  border-width: 10px;
+
 }

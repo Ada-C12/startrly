@@ -15,16 +15,19 @@ h2 {
 section {
   text-align: center;
   padding: 50px 0px 50px 0px;
+  border-bottom: 2px solid #76829a;
 }
-
 
 /* NAVIGATION */
 nav ul {
   display: grid;
   grid-template: 1fr / minmax(min-content, 5fr) 1fr 1fr;
-  padding-left: 50px;
+  padding: 0 5em 0 5em;
+  text-align: right;
 }
-
+nav ul li:first-child {
+  text-align: left;
+}
 
 /* TOP */ 
 .top h1 {
@@ -37,10 +40,12 @@ nav ul {
 .top a {
   display: inline-block;
   border-radius: 10px;
-  border: 2px solid grey;
+  border: 2px solid #76829a;
   padding: 20px;
   margin: 60px;
   text-decoration: none;
+  background-color: #698dd5;
+  color: white;
 }
 
 /* QUOTES */
@@ -49,8 +54,7 @@ nav ul {
   font-style: italic;
   line-height: 200%;
   padding: 50px 150px 50px 150px;
-  border-top: 2px solid grey;
-  border-bottom: 2px solid grey;
+  text-align: left;
 }
 blockquote::before {
   content: open-quote;
@@ -73,7 +77,7 @@ blockquote::after {
 }
 .tellmewhy ul li {
   display: grid;
-  grid-template: 1fr 5fr / 110px 160px;
+  grid-template: 1fr 5fr / 5fr 8fr;
   width: 300px;
   height: 100px;
   text-align: left;
@@ -83,25 +87,30 @@ blockquote::after {
 }
 .tellmewhy ul li img {
   grid-row-end: span 2;
+  padding: 0px 10px 0px 0px;
 }
 
 
 /* TEAM STUFF */
-.team ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  padding: 0;
-  height: 400px;
+.team {
+  border-bottom: none;
 }
-.team ul li:nth-of-type(2n) {
-  flex-direction: column;
-  align-self: flex-end;
+.team ul {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+  padding: 0;
+}
+.team ul li {
+  grid-column-end: span 2;
+  text-align: center; 
+}
+.team ul li:nth-of-type(4) {
+  grid-column-start: 2;
 }
 .team img {
-  display: block;
   border-radius: 50%;
+  border: 2px solid #76829a;
+  padding: 3px;
 }
 .team span {
   display: block;
@@ -120,6 +129,7 @@ blockquote::after {
 .support {
   display: flex;
   text-align: left;
+  border-bottom: none;
 }
 .support div {
   padding: 0px 50px 0px 100px;

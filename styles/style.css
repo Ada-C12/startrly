@@ -6,17 +6,23 @@ section {
   text-align: center;
 }
 
-nav>ul {
+ul {
   display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+nav>ul {
+  justify-content: left;
 }
 
 nav li {
-  display: inline-block;
   min-width: 8em;
 }
 
 #home {
-  margin-right: 12em;
+  margin-right: 66%;
 }
 
 #banner {
@@ -56,25 +62,20 @@ nav li {
   border-bottom: 1px solid lightgrey;
   margin: 2em;
   padding: 1em;
-}
-
-section>ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  flex-wrap: wrap;
+  background: #e5e5e5;
 }
 
 #reasons li {
   display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
   justify-content: left;
-  box-sizing: border-box;
+  
   max-height: 100px;
   max-width: 220px;
-  grid-template: 1fr 1fr / 1fr 1fr;
+  
+  margin: 2em;
   text-align: left;
   font-size: .66em;
-  margin: 2em;
 }
 
 #reasons img {
@@ -112,5 +113,5 @@ section>ul {
 }
 
 #footer ul {
-  list-style: none;
+  flex-direction: column;
 }

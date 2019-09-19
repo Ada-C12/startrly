@@ -1,3 +1,74 @@
 
 /* - CSS Grid
 - flexbox */
+
+
+html {
+  background-color: pink;
+  }
+
+body {
+  font-family: 'Muli', sans-serif;
+  
+}
+
+ul {
+list-style-type: none;
+}
+
+nav ul {
+  background-color: grey;
+  display: grid;
+  grid-template: 1/6;
+}
+
+.name {
+  grid-column: 1;
+}
+
+.try {
+  grid-column: 5;
+}
+
+.about {
+  grid-column: 6;
+}
+
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  background-color: gray; 
+  flex-basis: auto;
+  justify-content: center;
+  align-self: space-around;
+  /* text-align: center; */ 
+
+}
+
+.headline h1 {
+  margin: auto;
+}
+
+.headline sub {
+  margin: auto;
+  font-style: italic;
+  font-size: 2em;
+  flex-wrap: wrap;
+}
+
+.headline a {
+  margin: auto;
+}
+
+/* 
+blockquote {
+  font-style: italic;
+} */
+
+/* 
+body:last-child {
+  display: flex;
+  flex-direction: column;
+} */

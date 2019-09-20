@@ -28,7 +28,14 @@ ul {
 }
 
 nav {
-  padding: 10px;
+  padding: 2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: #3C3C3C;
+  color: #fbffea;
 }
 
 nav ul {
@@ -38,19 +45,32 @@ nav ul {
 
 nav li {
   font-weight: bold;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .header-ish {
-  height: 75vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(../images/wallpaper.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
   font-size: 6rem;
-  margin: 2px
+  margin: 2px;
+  -webkit-animation: fadein 7s;
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .header-ish sub {
@@ -60,10 +80,11 @@ h1 {
 
 .header-ish div {
   padding: 1rem;
-  border: 1px #AF473C solid;
+  border: 1px #BEC7BF solid;
   max-width: 20vw;
   border-radius: 1em;
   margin: 3rem;
+  background-color: #CDCDCD;
 } 
 
 .quote {
@@ -160,7 +181,7 @@ h1 {
 
 .footer-ish {
   display: flex;
-  background-color:#C18771;
+  /* background-color:#C18771; */
 }
 
 .footer-ish div {

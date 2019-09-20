@@ -1,0 +1,10 @@
+/* google font import */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans)
+
+body {
+  text-align: center;
+  margin-right: 5%;
+  margin-left: 5%;
+  font-family: sans-serif;
+}
+

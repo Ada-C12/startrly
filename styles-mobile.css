@@ -1,0 +1,27 @@
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: green;
+  }
+  nav ul {
+    grid-template: 1fr / 1vw 55vw 15vw 15vw;
+  }
+
+
+
+  .quote {
+    line-height: 200%;
+    padding: 5px 15px 5px 15px;
+  }
+
+  .tellmewhy ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tellmewhy img {
+    display: none;
+  }
+  .tellmewhy ul li {
+    width: 60vw;
+    grid-template: 1fr 3fr / 1fr;
+  }
+}

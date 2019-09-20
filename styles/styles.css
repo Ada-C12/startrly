@@ -1,19 +1,21 @@
 body {
- font-family: Arial, Helvetica, sans-serif
+ font-family: 'Monserrat', sans-serif;
 }
 
 .nav-container ul{
  width: 100%;
- height: 20px;
+ height: 30px;
  display: grid;
  grid-template-columns: 60% 20% 10%;
  flex-wrap: wrap;
+ background-color: rgb(245, 241, 241);
 }
 
 .nav-container ul li {
  list-style-type: none; 
  font-size: 10px;
  font-weight: bold;
+ align-self: center;
 }
 
 .website-intro-container {
@@ -50,10 +52,10 @@ font-weight: 600;
 }
 
 .quote{
- font-family: 'Times New Roman', Times, serif;
+ font-family: 'Dancing Script', cursive;
  font-style: italic;
  line-height: 2;
- font-size: 15px;
+ font-size: 1em;
  border-top: 1px solid lightgrey;
  border-bottom: 1px solid lightgrey;
  padding-top: 60px;

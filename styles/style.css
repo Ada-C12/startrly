@@ -1,0 +1,143 @@
+
+body {
+  font-family: 'Bree Serif', serif;
+}
+
+ul {
+list-style-type: none;
+padding: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  }
+  
+.start {
+  flex-basis: 70%;
+}
+
+.headline {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  height: 20rem;
+  flex-basis: auto;
+  justify-content: center;
+  align-self: space-around;
+  background-image: url("../images/tulip.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color:#eaf0e1
+}
+
+.headline h1 {
+  font-size: 3rem;
+  margin: auto;
+}
+
+.headline sub {
+  margin: 2em;
+  align-self: center;
+  font-style: italic;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+
+.headline a {
+  margin: 2em;
+  align-self: center;
+  border: 2px black;
+  padding: .5em;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  background-color: #718a4c;
+  font-size: .5rem;
+}
+
+.block {
+  margin: 75px 20px 75px 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-style: oblique;
+  border: 20rem;
+}
+
+section p {
+  text-align: right;
+}
+
+.comfortable {
+  content: url("");
+  width: 100px;
+  height: 100px;
+}
+
+
+.sponsors ul {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row-wrap;
+}
+
+.bottom {
+  display: flex;
+  flex-flow: row wrap;
+  width: auto;
+  justify-content: stretch;
+}
+
+.support{
+  flex-basis: 70%;
+}
+
+h2 {
+  text-align: center;
+}
+.team ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly
+}
+
+.team ul li {
+  width: 33%;
+  display: grid;
+  grid-template: 1/2;
+  justify-items: center;
+}
+
+.team ul li img {
+  border-radius: 50%;
+}
+
+.team ul li span {
+  justify-content: center;
+}
+
+
+  .support ul{
+  display: grid;
+  grid-template: 1/4;
+  align-items: start;
+  justify-self: start;
+}
+    
+
+
+@media screen and (max-width: 600px) {
+  .values img {
+    display: none;
+  }
+
+
+.team ul li {
+  width: 50%;
+}
+
+}

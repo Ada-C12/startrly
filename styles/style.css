@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo|Hind+Madurai&display=swap');
+
 body {
+    font-family: 'Cardo', serif;
     width: 100vw;
     text-align: center;
     font-size: 20px;
@@ -20,6 +23,7 @@ ul {
 }
 
 nav ul {
+    font-family: 'Hind Madurai', sans-serif;
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
@@ -36,13 +40,13 @@ nav ul :nth-child(2) {
 }
 
 section {
-    margin: 40px 0px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding-top: 0px;
 }
 
-.container section:first-of-type {
-    margin-top: 0px;
-    padding-top: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+#greeting {
+    margin: 150px 0px;
 
     display: flex;
     flex-direction: column;
@@ -56,10 +60,12 @@ section {
 }
 
 .container section sub {
+    font-family: 'Hind Madurai', sans-serif;
     flex-wrap: wrap;
     margin: 40px 50px 50px 50px;
     font-size: 2em;
     line-height: 50px;
+
 }
 
 .container section a {
@@ -87,6 +93,7 @@ section.quote {
     justify-content: center;
     align-content: space-around;
 
+    font-family: 'Hind Madurai', sans-serif;
     font-style: italic;
     line-height: 70px;
     padding: 20px 150px;
@@ -200,13 +207,15 @@ ul#sponsors .sponsor-links img {
 
 }
 
-.support, .about {
+.support,
+.about {
     display: flex;
     flex-direction: column;
     margin: 30px 30px;
 }
 
-.support ul, .about ul {
+.support ul,
+.about ul {
     display: flex;
     flex-direction: column;
 }

@@ -23,7 +23,7 @@ ul {
 }
 
 blockquote {
-  font-family: 'Times New Roman';
+  font-family: 'Mansalva', cursive;
   font-style: italic;
   display: flex;
   flex-wrap: wrap;
@@ -43,7 +43,7 @@ blockquote:after {
 }
 
 .quote-author {
-  font-family: 'Times New Roman';
+  font-family: 'Mansalva', cursive;
   font-style: italic;
   display: flex;
   line-height: 2em;

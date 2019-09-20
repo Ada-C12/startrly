@@ -73,7 +73,7 @@ h2 {
 }
 
 #reasons {
-  background-color: lightslategrey
+  background-color: lightslategrey;
   border-bottom: 4px solid grey
 }
 #reasons ul {

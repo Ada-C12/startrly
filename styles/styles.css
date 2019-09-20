@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Manjari&display=swap');
+
+body {
+  font-family: "Manjari";
+  border: solid whitesmoke 10px;
+}
+
+.navbar {
+  position: fixed;
+  padding-left: 58px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr 8.5fr 8fr;
+  position: relative;
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Lora";
+}
+
+#title {
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-bottom-width: thin;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+  background-image: url("https://images.pexels.com/photos/205316/pexels-photo-205316.png?cs=srgb&dl=apple-clean-containers-205316.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#title a {
+  display: inline-block;
+  margin: 50px;
+  border: solid 3px grey;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#title a:hover {
+  color: burlywood;
+}
+
+#title a:active {
+  color: blue;
+}
+
+#quote, #quote2 {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  padding-top: 90px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-bottom-width: thin;
+}
+
+#quote blockquote, #quote2 blockquote {
+  font-size: 25px;
+  text-align: left;
+  margin: 0px 150px 30px 0px;
+  padding: 50px 200px 5px 250px;
+  line-height: 2;
+  content: open-quote;
+
+  background: url("https://andyhooke.co.uk/wp-content/uploads/2018/02/yellow-brushstroke.png");
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding: 8px 0;
+}
+
+#quote blockquote:before, #quote2 blockquote:before {
+  content: open-quote;
+}
+
+#quote blockquote:after, #quote2 blockquote:after {
+  content: close-quote;
+}
+
+#quote p:before, #quote2 p:before {
+  content: "--"
+}
+
+#quote p, #quote2 p {
+  text-align: right;
+  padding-right: 250px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  
+}
+
+#why {
+  display: block;
+  text-align: center;
+  flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+#why ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  text-align: left;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-bottom-width: thin;
+}
+
+#why img {
+  float: left;
+  padding-right: 15px;
+}
+
+#team {
+  padding-top: 50px;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-bottom-width: thin;
+}
+
+#team img {
+  border-radius: 50%;
+  flex-wrap: wrap;
+  padding-bottom: 10%;
+  padding-right: 10%;
+}
+
+#team ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#team ul li {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  padding: 8%;
+}
+
+#sponsors {
+  padding-top: 50px;
+}
+
+#sponsors ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+#sponsors ul li {
+  padding: 2%;
+}
+
+#sponsors img {
+  box-shadow: 5px 8px #888888;
+}
+
+#footer {
+  display: grid;
+  padding-left: 70px;
+  grid-template-columns: repeat(2, 0.25fr);
+  justify-content: flex-start;
+  background-color: lightgrey;
+  box-shadow: 5px 8px #888888;
+}
+
+#footer h3 {
+  padding-left: 40px;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    width: 270px;
+  }
+}
+

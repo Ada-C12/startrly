@@ -1,38 +1,55 @@
-/* * {
-  border: black 1px solid;
-} */
-nav ul {
-  /* border: 2px solid blue; */
+* {
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: beige;
+  color: slategray;
+}
+
+span {
+  text-align: center;
+  display: block;
   display: grid;
-  grid-template: 40px / 3fr 2fr 2fr;
-  /* background-color: aqua; */
+}
+
+h2 {
+  text-align: center;
+}
+
+nav ul {
+  display: grid;
+  grid-template: 40px / 3fr 2fr 1fr 1ft;
   list-style: none;
+  font-weight: bold;
 }
 
 nav ul li:first-of-type{
   grid-column-start: 1;
   grid-column-end: 2;
-  /* color: orange; */
 }
 
 nav ul li:nth-of-type(2) {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  /* color: red; */
-  text-align: right;
-} 
-
-nav ul li:nth-of-type(3) {
   grid-column-start: 3;
-  /* color: purple; */
+  grid-column-end: 4;
   text-align: center;
 } 
 
+nav ul li:nth-of-type(3) {
+  grid-column-start: 4;
+  text-align: center;
+} 
+
+div>section:after {
+  display: inline-block;
+    content: "";
+    border-top: 0.5px solid black;
+    width: 98%;
+    margin: 2 2 rem;
+    padding-top: 50px;
+}
+
 div>section:first-of-type {
-  /* border: 2px solid limegreen; */
   display: grid;
-  grid-template: 150px 50px 50px / 1fr;
-  /* background-color: limegreen; */
+  grid-template: 150px 90px 90px 130px/ 1fr;
   align-items: center;
   justify-items: center;
 }
@@ -40,18 +57,136 @@ div>section:first-of-type {
 div>section:first-of-type h1 {
   grid-row-start: 1;
   grid-row-end: 2;
-  /* color: red; */
+  font-size: 300%;
+  font-family: 'Mystery Quest', cursive;
 }
 
 div>section:first-of-type sub {
   grid-row-start: 2;
   grid-row-end: 3;
-  /* color: orange; */
-  font-size: 150%;
+  font-size: 175%;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 div>section:first-of-type a{
-  /* grid-column-start: 1;
-  grid-column-end: 2; */
-  /* color: maroon; */
+  grid-row-start: 3;
+  font-size: 150%;
+  color: beige;
+  background-color: slategray;
+  text-decoration: none;
+  border: lightgray;
+  border-style: solid;
+  border-radius: 15px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  font-family: 'Mystery Quest', cursive;
+}
+
+blockquote:before, blockquote:after {
+  content: "\"";
+}
+
+blockquote {
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:.8em 30px .8em 75px;
+  line-height:1.6;
+  position: relative;
+  text-align: left;
+}
+
+div>section:nth-of-type(2) p:before, div>section:nth-of-type(4) p:before {
+  content: "--";
+}
+
+div>section:nth-of-type(2), div>section:nth-of-type(4) p {
+  font-style: normal;
+  text-align: right;
+  font-weight: bold;
+}
+
+div>section:nth-of-type(3) ul {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style-type: none;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+div>section:nth-of-type(3) ul {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+div>section:nth-of-type(5) ul li img {
+  border-radius: 50%;
+  filter: grayscale(100%);
+  border: .7px solid lightgray;
+  padding: 5px;
+  margin-left: 30px;
+}
+
+div>section:nth-of-type(5) ul{
+  display: grid;
+  grid-template: 200px 200px / 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  list-style: none;
+}
+
+div>section:nth-of-type(5) ul li:nth-of-type(1) {
+  /* color: purple; */
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+div>section:nth-of-type(5) ul li:nth-of-type(2) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-content: center;
+}
+
+div>section:nth-of-type(5) ul li:nth-of-type(3) {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+div>section:nth-of-type(5) ul li:nth-of-type(4) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+}
+
+div>section:nth-of-type(5) ul li:nth-of-type(5) {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+}
+
+div>section:nth-of-type(6) ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* height: 400px; */
+  width: 1200px;
+  list-style: none;
+  margin-left: 200px;
+  margin-right: 200 px; 
+  align-items: center;
 }

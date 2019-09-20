@@ -112,7 +112,6 @@ grid-template-rows: 100%;
 .reasons-content img{
  height: 70px;
  width: 70px;
-
 }
 
 #reason-1{
@@ -148,10 +147,6 @@ grid-template-rows: 100%;
 .team-container{
  height: 400px;
  width: 100%;
- border: solid black;
- /* display: grid;
- grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
- grid-template-rows: 1fr 1fr; */
 }
 
 .team-container h2{
@@ -193,3 +188,35 @@ grid-template-rows: 100%;
  text-align: center;
  display: block
 }
+
+/* This section is deeply flawed due to bad scaling.  */
+
+.sponsors{
+width: 100%;
+height: 300px;
+border: solid black;
+}
+
+.sponsors h2{
+ font-size: 1em;
+text-align: center;
+}
+
+.sponsors ul{
+ border: solid red;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+
+.sponsors ul li{
+ list-style-type: none;
+}
+
+.sponsors ul li img{
+ margin: 5px;
+}
+
+/* This section is deeply flawed due to bad scaling.  */
+
+

@@ -1,0 +1,143 @@
+#header-ish {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/wallpaper.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 6rem;
+  margin: 2px;
+  -webkit-animation: fadein 7s;
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+#header-ish sub {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+#header-ish div {
+  padding: 1rem;
+  border: 1px #BEC7BF solid;
+  max-width: 20vw;
+  border-radius: 1em;
+  margin: 3rem;
+  background-color: #CDCDCD;
+} 
+
+.quote {
+  border-top: 1px #AF473C solid;
+  border-bottom: 1px #AF473C solid;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-style: italic;
+}
+
+.quote section {
+  margin: 1rem;
+  min-height: 30vh;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.quote p {
+  text-align: right;
+  justify-content: right;
+}
+
+#product-description {
+  padding: 5vw;
+  background-image: url(../images/clouds.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#product-description ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  grid-template-rows: 1fr;
+  align-content: center;
+  font-size: 0.8rem;
+}
+
+#product-description li {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1.5fr;
+  text-align: left;
+  align-items: center;
+}
+
+#product-description img {
+  grid-area: 1 / 1 / span 2 / span 1;
+  margin: 1.5rem;
+  border: 1px solid #3C3C3C;
+}
+
+#product-description strong {
+  align-self: flex-end;
+}
+
+#product-description p {
+  align-self: flex-start;
+}
+
+#team {
+  background-image: url(../images/clouds.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+#team h2{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#team img {
+  border-radius: 50%;
+  width: 150px;
+  border: #3C3C3C 1px solid;
+}
+
+#team li{
+  display: flex;
+  flex-direction: column;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+#team ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+#sponser ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-bottom: 1px #AF473C solid;
+  padding-top: 2.55rem;
+  padding-bottom: 5rem;
+  margin-bottom: 0px;
+}

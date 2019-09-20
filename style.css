@@ -1,0 +1,221 @@
+* {
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: beige;
+  color: slategray;
+}
+
+span {
+  text-align: center;
+  display: grid;
+}
+
+h2 {
+  text-align: center;
+}
+
+nav ul {
+  display: grid;
+  grid-template: 40px / 3fr 2fr 1fr 1fr;
+  list-style: none;
+  font-weight: bold;
+}
+
+nav ul li:first-of-type{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+nav ul li:nth-of-type(2) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  text-align: center;
+} 
+
+nav ul li:nth-of-type(3) {
+  grid-column-start: 4;
+  text-align: center;
+} 
+
+div>section:after {
+  display: inline-block;
+  content: "";
+  border-top: 0.5px solid black;
+  width: 98%;
+  margin: 2 2 rem;
+  padding-top: 50px;
+}
+
+div>section:first-of-type {
+  display: grid;
+  grid-template: 150px 90px 90px 130px/ 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+div>section:first-of-type h1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 300%;
+  font-family: 'Mystery Quest', cursive;
+}
+
+div>section:first-of-type sub {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 175%;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+div>section:first-of-type a{
+  grid-row-start: 3;
+  font-size: 150%;
+  color: beige;
+  background-color: slategray;
+  text-decoration: none;
+  border: lightgray;
+  border-style: solid;
+  border-radius: 15px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  font-family: 'Mystery Quest', cursive;
+}
+
+blockquote:before, blockquote:after {
+  content: "\"";
+}
+
+blockquote {
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:.8em 30px .8em 75px;
+  line-height:1.6;
+  position: relative;
+  text-align: left;
+  background-color: lightgrey;
+}
+
+div>section:nth-of-type(2) p:before, div>section:nth-of-type(4) p:before {
+  content: "--";
+}
+
+div>section:nth-of-type(2), div>section:nth-of-type(4) p {
+  font-style: normal;
+  text-align: right;
+  font-weight: bold;
+}
+
+div>section:nth-of-type(3) ul {
+  display: flex;
+  height: 200px;
+  width: 80%;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style-type: none;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+li p {  
+  display: inline;
+  display: inline-flex;
+  position: absolute;
+  top: 950px;
+  width: 320px;
+}
+
+div>section:nth-of-type(3) li strong {
+  position: absolute;
+  top: 940px;
+}
+
+div>section:nth-of-type(5) ul li img {
+  border-radius: 50%;
+  filter: grayscale(100%);
+  margin-left: 30px;
+}
+
+.hover:hover, div>section:nth-of-type(5) ul li img:hover {
+  background-color: purple;
+  color: white;
+  filter: none;
+}
+
+div>section:nth-of-type(5) ul{
+  display: grid;
+  grid-template: 200px 200px / 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  list-style: none;
+}
+
+div>section:nth-of-type(5) ul li:nth-of-type(1) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+div>section:nth-of-type(5) ul li:nth-of-type(2) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-content: center;
+}
+
+div>section:nth-of-type(5) ul li:nth-of-type(3) {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+div>section:nth-of-type(5) ul li:nth-of-type(4) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+}
+
+div>section:nth-of-type(5) ul li:nth-of-type(5) {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+}
+
+div>section:nth-of-type(5)::after, div>section:last-of-type:after {
+  border-top: none;
+}
+
+div>section:nth-of-type(6) ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1200px;
+  list-style: none;
+  margin-left: 200px;
+  margin-right: 200px; 
+  align-items: center;
+}
+
+div>section:last-of-type  {
+  display: grid;
+  grid-template: 175px / 1fr 1fr 1fr 1fr 1fr;
+}
+
+div>section:last-of-type div:first-of-type {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+div>section:last-of-type div:last-of-type {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}

@@ -1,0 +1,273 @@
+.nav-container {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgray;
+  margin: 0px;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-weight: bold;
+}
+
+#first {
+  display: flex;
+  width: 70%;
+}
+
+#first:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+#second {
+  display: flex;
+  width: 20%;
+}
+
+#second:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+#third {
+  display: flex;
+  padding-right: 60px;
+}
+
+#third:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+body {
+  display: grid;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center
+}
+
+section {
+  border-bottom: solid;
+  border-width: 0.75px;
+  border-color: gray;
+}
+
+.first-block {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: rgb(160, 210, 207);
+}
+
+.first-block h1 {
+  font-size: 35pt;
+}
+
+.first-block sub {
+  padding: 10px 10px 60px 10px;
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.first-block a[href="#"] {
+  border-style: solid;
+  border-color: black;
+  border-radius: 8px;
+  padding: 20px 20px 20px 20px;
+  align-self: center;
+  text-decoration: none;
+  color: black;
+  font-size: 16pt;
+  color: black;
+}
+
+.first-block a[href="#"]:hover {
+  border-color: rgb(255, 250, 241);
+  color: rgb(255, 250, 241);
+}
+
+.quote {
+display: block;
+padding-top: 80px;
+padding-bottom: 80px;
+padding-right: 75px;
+padding-left: 80px;
+font-family: 'PT Serif', serif;
+font-style: italic;
+font-size: 16pt;
+background-color: rgb(255, 250, 241)
+}
+
+.quote blockquote {
+  text-align: left; 
+  line-height: 2;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.quote blockquote:before {
+  content: open-quote;
+}
+
+.quote blockquote:after {
+  content: close-quote;
+}
+
+.quote p {
+  text-align: right; 
+  margin-right: 40px;
+}
+
+.quote p:before {
+  content: "--"
+}
+
+li {
+  list-style-type: none;
+}
+
+.third-block {
+  background-color: rgb(255, 250, 241)
+}
+
+.third-block h2 {
+  text-align: center;
+  padding: 40px;
+  margin: 0px;
+}
+
+.third-block ul {
+  display: flex;
+  justify-content: center;
+}
+
+.third-block li {
+  display: grid;
+  grid-template-columns: 110px 190px;
+  grid-template-rows: 15% 85%;
+  padding-right: 50px;
+}
+
+.third-block img {
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column: 1;
+}
+
+.third-block strong {
+  display: grid;
+  grid-row: 1;
+  grid-column: 2;
+  text-align: left;
+}
+
+.third-block p {
+  display: grid;
+  grid-row: 2;
+  grid-column: 2;
+  text-align: left;
+  margin-block-start: 5px;
+  padding-bottom: 30px;
+}
+
+.fifth-block {
+  display: flex;
+  /* flex-flow: row wrap; */
+  border: none;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  background-color: rgb(255, 250, 241)
+}
+
+.fifth-block h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.fifth-block ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.fifth-block li {
+  display: grid;
+  text-align: center;
+  padding: 20px;
+  flex: 25%;
+}
+
+.fifth-block li:nth-child(4) {
+  padding-left: 150px; 
+  padding-right: 0px;
+}
+
+.fifth-block li:nth-child(5) {
+  padding-right: 150px;
+  padding-left: 0px;
+}
+
+.fifth-block img {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: lightgray;
+  padding: 4px;
+  border-width: thin;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fifth-block li span {
+  padding-top: 20px;
+}
+
+.sixth-block {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  background-color: rgb(255, 250, 241);
+}
+
+.sixth-block h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.sixth-block ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.seventh-block {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-top: 30px;
+  background-color: rgb(160, 210, 207);
+}
+
+.seventh-block div:first-child {
+  text-align: left;
+  padding-left: 100px;
+  padding-bottom: 50px;
+}
+
+.seventh-block div:first-child ul {
+ padding-left: 0px;
+}
+
+.seventh-block div:last-child {
+  text-align: left;
+}
+
+.seventh-block div:last-child ul {
+  padding-left: 0px;
+}
+
+
+
+

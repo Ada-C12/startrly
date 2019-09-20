@@ -1,0 +1,161 @@
+
+/* * {
+  border: red dotted 1px;
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  list-style: none;
+  margin: 3% 2%;
+  font-weight: 700;
+}
+
+section:nth-child(odd){
+  background-color: lightgray;
+}
+
+h1 {
+  font-size: 2.7em;
+}
+
+#top-opener {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#top-opener sub {
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 1em;
+  margin: 2%;
+}
+
+#top-opener a {
+  border: lightgray solid 2px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: black;
+  padding: .6em;
+  margin: 3%;
+  text-decoration: none;
+}
+
+.quote {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: black solid 1px;
+  border-bottom: black solid 1px;
+  margin: 2em 0;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+blockquote {
+  padding: 2em;
+  width: 67%;
+  line-height: 2em;
+}
+
+blockquote:hover{
+  color: blue;
+}
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
+.quote p {
+  text-align: right;
+  width: 75%;
+}
+
+.quote p:before {
+  content: "-- "
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+ #why ul {
+  display:flex;
+  justify-content: space-around;
+} 
+
+ #why ul>li>img {
+   float: left;
+ }
+
+ #why ul>li {
+  width: 22%;
+  list-style: none;
+} 
+
+#team-members ul {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 15%;
+  margin-right: 15%
+}
+
+#team-members ul>li {
+  display:flex;
+  flex-flow: column wrap;
+  text-align: center;
+  list-style: none;
+  margin: 5%;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  border: lightgray solid 1px;
+  padding: .5em;
+  margin: 4%;
+}
+
+#sponsors {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 4% 0;
+}
+
+#sponsors ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer {
+  border-top: black solid 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+}
+
+.footer div {
+  margin-left: 5em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}

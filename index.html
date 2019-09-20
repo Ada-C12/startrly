@@ -2,12 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <title>Startrly</title>
   </head>
   <body>
     <div>
-
-
       <nav>
         <ul>
           <li>
@@ -23,9 +24,12 @@
       </nav>
 
 
-      <section>
+      <section class="pagetitle">
         <h1>Startrly</h1>
-        <sub>A catchy tagline for a great solution</sub>
+        <div>
+        <sub id="sub">A catchy tagline for a great solution</sub>
+        <br>
+        </div>
         <a href="#">Some Call to Action</a>
       </section>
 
@@ -42,23 +46,23 @@
 
       <section>
         <h2>Why?</h2>
-        <ul>
+        <ul class="why">
           <li>
-            <img src="http://via.placeholder.com/100x100" />
+            <img src="http://via.placeholder.com/100x100" class="why_img"/>
             <strong>Comfortable</strong>
             <p>
               Et quas molestias excepturi sint occaecati cupiditate non providents, ut aut reiciendis voluptatibus maiores.
             </p>
           </li>
           <li>
-            <img src="http://via.placeholder.com/100x100" />
+            <img src="http://via.placeholder.com/100x100" class="why_img"/>
             <strong>Robust</strong>
             <p>
               At vero eos et accusamus et iusto odio dignissimos ducimus qui. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.
             </p>
           </li>
           <li>
-            <img src="http://via.placeholder.com/100x100" />
+            <img src="http://via.placeholder.com/100x100" class="why_img" />
             <strong>Convenient</strong>
             <p>
               Itaque earum rerum hic tenetur a sapiente delectus.
@@ -80,39 +84,40 @@
 
       <section>
         <h2>Meet the team</h2>
-        <ul>
-          <li>
-            <img src="https://placebear.com/150/150" alt="profile for kari kiwi" />
-            <span>Kari Kiwi</span>
-            <span>CFO</span>
+        <ul class="grid" id="team">
+          <li class="img-with-text" id="one">
+            <img src="https://placebear.com/150/150" alt="profile for kari kiwi"/>
+            <br><span>Kari Kiwi</span>
+            <br><span>CFO</span>
           </li>
-          <li>
+          <li class="img-with-text" id="two" >
             <img src="https://placebear.com/150/150" alt="profile for dan dragon" />
-            <span>Dan Dragon</span>
-            <span>CMO</span>
+            <br><span>Dan Dragon</span>
+            <br><span>CMO</span>
           </li>
-          <li>
-            <img src="https://placebear.com/150/150" alt="profile for chris caribou" />
-            <span>Chris Caribou</span>
-            <span>CIO</span>
+          <li class="img-with-text" id="three">
+            <img src="https://placebear.com/150/150" alt="profile for chris caribou"  />
+            <br><span>Chris Caribou</span>
+            <br><span>CIO</span>
           </li>
-          <li>
-            <img src="https://placebear.com/150/150" alt="profile for charles cheetah" />
-            <span>Charles Cheetah</span>
-            <span>Board Member, CTO</span>
+          <li class="img-with-text" id="four">
+            <img src="https://placebear.com/150/150" alt="profile for charles cheetah"  />
+            <br><span>Charles Cheetah</span>
+            <br><span>Board Member, CTO</span>
           </li>
-          <li>
-            <img src="https://placebear.com/150/150" alt="profile for dee dugong" />
-            <span>Dee Dugong</span>
-            <span>Startup Enthusiast</span>
+          <li class="img-with-text" id="five">
+            <img src="https://placebear.com/150/150" alt="profile for dee dugong"  />
+            <br><span>Dee Dugong</span>
+            <br><span>Startup Enthusiast</span>
           </li>
         </ul>
       </section>
 
 
-      <section>
-        <h2>Sponsors</h2>
-        <ul>
+      
+      <h2>Sponsors</h2>
+      <div>  
+        <ul class="sponsors">
           <li>
             <img src="http://via.placeholder.com/300x100" />
           </li>
@@ -129,11 +134,11 @@
             <img src="http://via.placeholder.com/220x100" />
           </li>
         </ul>
-      </section>
+      </div>
 
 
-      <section>
-        <div>
+      <section id="footer">
+        <div class="footer-column">
           <h3>Support</h3>
           <ul>
             <li>
@@ -150,7 +155,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-column">
           <h3>About</h3>
           <ul>
             <li>

@@ -1,0 +1,160 @@
+
+* {
+  border: red dotted 1px;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  margin: 3% 2%;
+  list-style: none;
+  font-weight: 700;
+}
+
+nav ul li {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#logo-corner {
+  display: flex;
+  align-self: flex-end;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.7em;
+}
+
+#top-opener {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#top-opener sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 1em;
+  margin: 2%;
+}
+
+#top-opener a {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  border: lightgray solid 2px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: black;
+  padding: .6em;
+  margin: 3%;
+  text-decoration: none;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: black solid 1px;
+  border-bottom: black solid 1px;
+  margin: 2em 0;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+blockquote {
+  position: relative;
+  padding: 2em;
+  width: 70%;
+  display: flex;
+  align-content: center;
+  line-height: 2em;
+}
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
+blockquote:before,
+blockquote:after {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 1em;
+  top: .1em;
+  position: relative;
+}
+
+.quote p {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  width: 20%;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.why ul {
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.why ul>li {
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 22%;
+  text-align: center;
+  list-style: none;
+}
+
+.team-members ul {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 15%;
+  margin-right: 15%
+}
+
+.team-members ul>li {
+  display:flex;
+  flex-flow: column wrap;
+  text-align: center;
+  list-style: none;
+  margin: 5%;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  border: lightgray solid 1px;
+  padding: .5em;
+}
+
+.sponsors {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sponsors ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

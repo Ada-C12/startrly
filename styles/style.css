@@ -1,10 +1,9 @@
 * {
-  font-size: .98em;
   font-family: Arial, Helvetica, sans-serif;
   border: .1em solid lightgray;
 }
 nav ul, #sponsors ul {
-  font-size: .75em;
+  font-size: .6em;
   display: grid;
   grid-template-columns: 5fr 2fr 2fr;
   grid-template-rows: 3em;
@@ -86,12 +85,12 @@ blockquote:after {
   padding-top: 1.5rem;
 }
 
-#why h2, #team h2 {
+#why h2, #team h2, #sponsors h2 {
   text-align: center;
-  padding-bottom: 1rem;
+  padding-bottom: .4rem;
 }
 
-#why ul, #team ul, #sponsors ul{
+#why ul{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 3em;
@@ -108,26 +107,68 @@ blockquote:after {
 
 #team, #sponsors {
   display: grid;
+  grid-template-rows: 1fr 4fr;
 }
 
-#team ul, #sponsors ul {
+#team ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em 2em 2em 2em;
 }
 
 #team li, #sponsors li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#team li {
+flex-basis: 23%;
+}
+
+#team img {
+  align-self: center;
+  border-width: .1em;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: lightgray;
+  box-shadow: 0 0 0 .05em lightgray;
+  padding: .3em;
+}
+
+#team span {
+  padding-top: .3em;
+  padding-bottom: .2em;
+  text-align: center;
+}
+
+#sponsors ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em 2em 2em 2em;
 }
 
 footer {
-  font-size: .8em;
+  font-size: .7em;
   display: grid;
   grid-template-columns: 2fr 2fr 6fr;
+  padding-left: 4em;
+}
+
+.footer-top-border {
+  border-top: 2px solid lightgray;
+  padding-top: .4rem;
 }
 
 footer ul {
   list-style: none;
+  padding: 0 10em 0 0;
 }
 
 

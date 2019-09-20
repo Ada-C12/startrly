@@ -3,21 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Startrly</title>
+    <LINK REL=StyleSheet HREF="normalize.css" TYPE="text/css">
+    <LINK REL=StyleSheet HREF="style.css" TYPE="text/css">
   </head>
   <body>
     <div>
 
 
       <nav>
-        <ul>
-          <li>
-            Startrly
+        <ul class="nav-container">
+          <li class="nav-item1">
+            <strong>Startrly</strong>
           </li>
-          <li>
-            Try Now!
+          <li class="nav-item2">
+            <strong>Try Now!</strong>
           </li>
-          <li>
-            About
+          <li class="nav-item3">
+            <strong>About</strong>
           </li>
         </ul>
       </nav>
@@ -25,42 +27,42 @@
 
       <section>
         <h1>Startrly</h1>
-        <sub>A catchy tagline for a great solution</sub>
-        <a href="#">Some Call to Action</a>
+        <sub><strong>A Catchy Tagline for a Great Solution</strong></sub>
+        <h2><a href="#">Some Call to Action</a></h2>
       </section>
 
 
       <section>
         <blockquote>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <em>" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</em>
         </blockquote>
         <p>
-          Mx. Lorem
+          <em>-- Mx. Lorem</em>
         </p>
       </section>
 
 
       <section>
-        <h2>Why?</h2>
-        <ul>
-          <li>
-            <img src="http://via.placeholder.com/100x100" />
-            <strong>Comfortable</strong>
-            <p>
+        <h2 class="why">Why?</h2>
+        <ul class="flex-container">
+          <li class="why-container">
+            <img class="list-item1" src="http://via.placeholder.com/100x100" />
+            <strong class="list-item2">Comfortable</strong>
+            <p class="list-item3">
               Et quas molestias excepturi sint occaecati cupiditate non providents, ut aut reiciendis voluptatibus maiores.
             </p>
           </li>
-          <li>
-            <img src="http://via.placeholder.com/100x100" />
-            <strong>Robust</strong>
-            <p>
+          <li class="why-container">
+            <img class="list-item1" src="http://via.placeholder.com/100x100" />
+            <strong class="list-item2">Robust</strong>
+            <p class="list-item3">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.
             </p>
           </li>
-          <li>
-            <img src="http://via.placeholder.com/100x100" />
-            <strong>Convenient</strong>
-            <p>
+          <li class="why-container">
+            <img class="list-item1" src="http://via.placeholder.com/100x100" />
+            <strong class="list-item2">Convenient</strong>
+            <p class="list-item3">
               Itaque earum rerum hic tenetur a sapiente delectus.
             </p>
           </li>
@@ -70,17 +72,17 @@
 
       <section>
         <blockquote>
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          <em>" Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. "</em>
         </blockquote>
         <p>
-          Mx. Ipsum
+          <em>-- Mx. Ipsum</em>
         </p>
       </section>
 
 
-      <section>
+      <section class="team">
         <h2>Meet the team</h2>
-        <ul>
+        <ul class="team-pictures">
           <li>
             <img src="https://placebear.com/150/150" alt="profile for kari kiwi" />
             <span>Kari Kiwi</span>
@@ -110,7 +112,7 @@
       </section>
 
 
-      <section>
+      <section class="sponsors">
         <h2>Sponsors</h2>
         <ul>
           <li>
@@ -133,39 +135,40 @@
 
 
       <section>
-        <div>
-          <h3>Support</h3>
-          <ul>
-            <li>
-              Demo
-            </li>
-            <li>
-              Support
-            </li>
-            <li>
-              Contact
-            </li>
-            <li>
-              Docs
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>About</h3>
-          <ul>
-            <li>
-              Our Mission
-            </li>
-            <li>
-              Careers
-            </li>
-            <li>
-              Get in Touch
-            </li>
-          </ul>
-        </div>
-      </section>
-
+        <footer>
+          <div>
+            <h3>Support</h3>
+            <ul>
+              <li>
+                Demo
+              </li>
+              <li>
+                Support
+              </li>
+              <li>
+                Contact
+              </li>
+              <li>
+                Docs
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>About</h3>
+            <ul>
+              <li>
+                Our Mission
+              </li>
+              <li>
+                Careers
+              </li>
+              <li>
+                Get in Touch
+              </li>
+            </ul>
+          </div>
+        </section>
+      </footer>
     </div>
   </body>
 </html>

@@ -27,6 +27,11 @@ ul {
   padding-inline-start: 0px;
 }
 
+.extremities {
+  background-color: #3C3C3C;
+  color: #fbffea;
+}
+
 nav {
   padding: 2px;
   position: fixed;
@@ -34,8 +39,6 @@ nav {
   left: 0;
   z-index: 9999;
   width: 100%;
-  background-color: #3C3C3C;
-  color: #fbffea;
 }
 
 nav ul {
@@ -49,7 +52,7 @@ nav li {
   padding-right: 1em;
 }
 
-.header-ish {
+#header-ish {
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -73,12 +76,12 @@ h1 {
   to   { opacity: 1; }
 }
 
-.header-ish sub {
+#header-ish sub {
   font-size: 1.5rem;
   padding: 0.5rem;
 }
 
-.header-ish div {
+#header-ish div {
   padding: 1rem;
   border: 1px #BEC7BF solid;
   max-width: 20vw;
@@ -110,13 +113,15 @@ h1 {
   justify-content: right;
 }
 
-.product_description {
-  margin: 5vw;
-  wrap: wrap;
-
+#product-description {
+  padding: 5vw;
+  background-image: url(../images/clouds.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.product_description ul {
+#product-description ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
   grid-template-rows: 1fr;
@@ -124,7 +129,7 @@ h1 {
   font-size: 0.8rem;
 }
 
-.product_description li {
+#product-description li {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1.5fr;
@@ -132,45 +137,55 @@ h1 {
   align-items: center;
 }
 
-.product_description img {
+#product-description img {
   grid-area: 1 / 1 / span 2 / span 1;
   margin: 1.5rem;
+  border: 1px solid #3C3C3C;
 }
 
-.product_description strong {
+#product-description strong {
   align-self: flex-end;
 }
 
-.product_description p {
+#product-description p {
   align-self: flex-start;
 }
 
-.team h2{
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+#team {
+  background-image: url(../images/clouds.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
 }
 
-.team img {
+#team h2{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#team img {
   border-radius: 50%;
-  width: 200px;
+  width: 150px;
   border: #3C3C3C 1px solid;
 }
 
-.team li{
+#team li{
   display: flex;
   flex-direction: column;
   margin-left: 7rem;
   margin-right: 7rem;
 }
 
-.team ul {
+#team ul {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
-.sponser ul {
+#sponser ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -181,10 +196,10 @@ h1 {
   margin-bottom: 0px;
 }
 
-.footer-ish {
+#footer-ish {
   display: flex;
 }
 
-.footer-ish div {
+#footer-ish div {
   padding: 2.5rem;
 }

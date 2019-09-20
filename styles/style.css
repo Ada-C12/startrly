@@ -39,7 +39,6 @@
   justify-content: center;
   text-align: center;
   padding-bottom: 5%;
-  
 }
 
 .section-one-container * {
@@ -60,6 +59,10 @@ a[href="#"] {
   padding: 10px 10px;
   align-self: center;
   text-decoration: none;
+}
+
+a:hover {
+  color: hotpink;
 }
 
 /* Blockquote 1 */
@@ -107,6 +110,7 @@ a[href="#"] {
   flex-flow: row wrap;
   text-align: center;
   justify-content: center;
+
 }
 
 .why-list-container {
@@ -117,16 +121,12 @@ a[href="#"] {
   list-style-type: none;
   align-items: space-evenly;
   text-align: center;
+  width: 90%;
 }
 
 .why-list-container li img {
   float: left;
 }
-
-/* .why-list-container li p {
-  float: right;
-} */
-
 
 /* Blockquote 2 */
 .section-blockquote-two-container {
@@ -182,7 +182,6 @@ section h2 {
   border-radius: 50%
 }
 
-
 /* Sponsors */
 section h2 {
   font-family: 'Roboto', sans-serif;
@@ -200,10 +199,9 @@ section h2 {
   list-style-type: none;
 }
 
-/* consider making footer section a grid? */
 .footer-section-container {
   display: grid;
-  grid-template-columns: 100px 100px;
+  grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
   justify-items: start;
   font-family: 'Roboto', sans-serif;
   grid-gap: 5rem;
@@ -217,10 +215,7 @@ section h2 {
 
 .header {
   border-radius: 5px;
-  /* padding: 10px; */
-  padding-left: 2rem;
-  /* padding-bottom: 5px; */
-  
+  padding-left: 2rem;  
 }
 
 .support {
@@ -238,48 +233,3 @@ section h2 {
   padding: 10px;
   padding-left: 2rem;
 }
-
-/* .support-header {
-  grid-area: support-header;
-  color: red;
-  text-align: center;
-} */
-
-
-
-
-
-
-
-/* .footer-section-container {
-  display: flex;
-  flex-flow: row wrap;
-  flex-direction: center;
-  border-top: solid;
-  border-top-color: gray;
-  justify-content: flex-start;
-  align-items: flex-start
-
-}
-
-.footer-section-container * {
-  font-family: 'Roboto', sans-serif;
-}
-
-#support-footer li {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  flex-flow: column wrap;
-  flex-basis: 30%;
-}
-
-#about-footer li {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  flex-flow: column wrap;
-  flex-basis: 30%;
-} */
-
-

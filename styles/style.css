@@ -190,3 +190,23 @@ ul#sponsors .sponsor-links img {
     margin: 10px 10px;
 
 }
+
+#footer-info {
+    border-top: 2px solid gainsboro;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: baseline;
+
+}
+
+.support, .about {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 30px;
+}
+
+.support ul, .about ul {
+    display: flex;
+    flex-direction: column;
+}

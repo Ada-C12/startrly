@@ -17,6 +17,8 @@ body {
 }
 
 .website-intro-container {
+ margin-top: 100px;
+ margin-bottom: 50px;
  width: 100%;
  height: 200px;
  text-align: center;
@@ -189,12 +191,11 @@ grid-template-rows: 100%;
  display: block
 }
 
-/* This section is deeply flawed due to bad scaling.  */
-
 .sponsors{
 width: 100%;
-height: 300px;
-margin-bottom: 200px;
+height: 250px;
+margin-top: 100px;
+
 }
 
 .sponsors h2{
@@ -206,7 +207,9 @@ text-align: center;
 
  display: flex;
  flex-wrap: wrap;
+ width: 95%;
  justify-content: space-around;
+ align-items: center;
 }
 
 .sponsors ul li{
@@ -217,13 +220,37 @@ text-align: center;
  margin: 5px;
 }
 
-/* This section is deeply flawed due to bad scaling.  */
+#sponsor-1{
+ height: 4em;
+ width: 12em;
+}
+
+#sponsor-2{
+ height: 5em;
+ width: 10em;
+}
+
+#sponsor-3{
+ height: 2.8em;
+ width: 11em;
+}
+
+#sponsor-4{
+ height: 4.8em;
+ width: 10em;
+}
+
+#sponsor-5{
+ height: 4em;
+ width: 8.8em;
+}
 
 .additional-links{
 font-size: .5em;
 display: grid;
 grid-template-columns: 8% 15%;
 border-top: 1px solid lightgrey;
+margin-bottom: 35px;
 }
 
 .additional-links h3{

@@ -172,3 +172,21 @@ ul#members .links li img {
     width: 150px;
     height: 150px;
 }
+
+#sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul#sponsors .sponsor-links {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0;
+}
+
+ul#sponsors .sponsor-links img {
+    margin: 10px 10px;
+
+}

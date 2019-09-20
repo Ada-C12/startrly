@@ -58,13 +58,13 @@ a:hover {
 .quote {
   font-style: italic;
   font-size: 1.2em;
-  background-color: lightskyblue;
+  background-color: salmon;
   border-bottom: 4px solid grey
   }
 blockquote+p {
   font-style: italic;
   text-align: right;
-  background-color: lightskyblue
+  background-color: salmon
   }
 
 h2 {
@@ -73,7 +73,7 @@ h2 {
 }
 
 #reasons {
-  background-color: seagreen;
+  background-color: lightslategrey
   border-bottom: 4px solid grey
 }
 #reasons ul {
@@ -106,6 +106,10 @@ h2 {
 .bottom {
   grid-row: 2 / 3;
   padding: 1.5em
+}
+#team span{
+  display: block;
+  text-align: center
 }
 #kiwi {
   grid-column: 2 / 3

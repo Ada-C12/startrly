@@ -1,0 +1,174 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.container li {
+  min-height: 50px;
+}
+
+.container li:nth-child(3) {
+  padding-right: 10em;
+}
+
+.container li:nth-child(2) {
+  padding-left: 26em;
+}
+  
+* {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#startly {
+  height: 9em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px gray;
+  padding: 0px 0px 10%;
+  background-color: #8deb93;
+}
+
+#startly sub {
+  min-height: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#startly a {
+  pointer-events: none;
+  text-decoration: none;
+  border: solid 2px gray;
+  border-radius: 5px; 
+  padding: 10px;
+  color: gray;
+}
+
+#startly a:hover {
+  color: green;
+}
+
+.section_ { 
+  border-bottom: solid 1px gray;
+  padding: 8% 0px 8%;
+  font-style: italic;
+}
+
+.section_ blockquote {
+  text-align: left;
+  padding: 0px 8% 0px;
+  line-height: 2em;
+  padding-bottom: 20px;
+}
+
+.section_ p {
+  text-align: right;
+  padding: 0px 8% 0px 0px;
+}
+
+section h2 {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.why {
+  display: grid;
+  list-style-type: none;
+  border-bottom: solid 1px gray;
+  justify-content: center;
+  grid-template-columns: 30% 30% 30%;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+.why img {
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.team {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: flex-start;
+  list-style-type: none;
+  min-height: 30em;
+  justify-content: space-evenly;
+}
+
+.team img {
+  border-radius: 50%;
+  align-self: center;
+  flex-wrap: wrap;
+  border: double 4px gray;
+}
+
+.team li:nth-child(4), .team li:nth-child(2) {
+align-self: flex-end;
+}
+
+span {
+  display: block;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.sponsors {
+  display: flex;
+  align-items: flex-start;
+  list-style-type: none;
+  min-height: 16em;
+  padding-top: 2em;
+  border-bottom: solid 1px gray;
+  padding-bottom: 5%
+}
+
+.sponsors li:nth-child(4) {
+  align-self: flex-end;
+
+}
+
+.sponsors li:nth-child(3) {
+  width: 60px;
+}
+
+.sponsors li:nth-child(2) {
+  width: 18em;
+}
+
+.sponsors li:nth-child(1) {
+  width: 20em;
+}
+
+.support, .about {
+  list-style-type: none;
+}
+
+.support {
+  margin-right: 80em;
+}
+
+#support_title {
+  text-indent: 2em;
+  margin-right: 80em;
+
+}
+
+#about_title {
+  margin-left: 15em;
+  margin-top: -7em;
+}
+
+.about {
+  margin-left: 15em;
+}
+
+
+
+
+
+
+

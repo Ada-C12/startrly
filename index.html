@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Startrly</title>
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   </head>
   <body>
     <div>
-
-
       <nav>
-        <ul>
+        <ul class="grid" id="nav">
           <li>
             Startrly
           </li>
+          <li></li>
+          <li></li>
           <li>
             Try Now!
           </li>
@@ -22,27 +25,28 @@
         </ul>
       </nav>
 
-
-      <section>
+      <section id="intro">
         <h1>Startrly</h1>
-        <sub>A catchy tagline for a great solution</sub>
+        <sub>A Catchy Tagline For a Great Solution</sub>
         <a href="#">Some Call to Action</a>
       </section>
 
+      <hr>
 
-      <section>
+      <section class="quotes">
         <blockquote>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
         </blockquote>
         <p>
-          Mx. Lorem
+          -- Mx. Lorem
         </p>
       </section>
 
+      <hr>
 
-      <section>
-        <h2>Why?</h2>
-        <ul>
+      <section id="why">
+        <h2 class="heading">Why?</h2>
+        <ul class="grid">
           <li>
             <img src="http://via.placeholder.com/100x100" />
             <strong>Comfortable</strong>
@@ -67,41 +71,43 @@
         </ul>
       </section>
 
+      <hr>
 
-      <section>
+      <section class="quotes">
         <blockquote>
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          " Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. "
         </blockquote>
         <p>
-          Mx. Ipsum
+          -- Mx. Ipsum
         </p>
       </section>
 
+      <hr>
 
-      <section>
-        <h2>Meet the team</h2>
-        <ul>
-          <li>
+      <section id="team">
+        <h2 class="heading">Meet the team</h2>
+        <ul class="grid">
+          <li class="img1">
             <img src="https://placebear.com/150/150" alt="profile for kari kiwi" />
             <span>Kari Kiwi</span>
             <span>CFO</span>
           </li>
-          <li>
+          <li class="img2">
             <img src="https://placebear.com/150/150" alt="profile for dan dragon" />
             <span>Dan Dragon</span>
             <span>CMO</span>
           </li>
-          <li>
+          <li class="img3">
             <img src="https://placebear.com/150/150" alt="profile for chris caribou" />
             <span>Chris Caribou</span>
             <span>CIO</span>
           </li>
-          <li>
+          <li class="img4">
             <img src="https://placebear.com/150/150" alt="profile for charles cheetah" />
             <span>Charles Cheetah</span>
             <span>Board Member, CTO</span>
           </li>
-          <li>
+          <li class="img5">
             <img src="https://placebear.com/150/150" alt="profile for dee dugong" />
             <span>Dee Dugong</span>
             <span>Startup Enthusiast</span>
@@ -109,30 +115,30 @@
         </ul>
       </section>
 
-
-      <section>
-        <h2>Sponsors</h2>
-        <ul>
-          <li>
+      <section id="sponsors">
+        <h2 class="heading">Sponsors</h2>
+        <ul class="flexbox" >
+          <li class="img6">
             <img src="http://via.placeholder.com/300x100" />
           </li>
-          <li>
+          <li class="img7">
             <img src="http://via.placeholder.com/250x125" />
           </li>
-          <li>
+          <li class="img8">
             <img src="http://via.placeholder.com/275x70" />
-          </li>
-          <li>
+          </li >
+          <li class="img9">
             <img src="http://via.placeholder.com/250x120" />
           </li>
-          <li>
+          <li class="img10">
             <img src="http://via.placeholder.com/220x100" />
           </li>
         </ul>
       </section>
 
+      <hr>
 
-      <section>
+      <section class="grid" id="footer">
         <div>
           <h3>Support</h3>
           <ul>
@@ -165,7 +171,6 @@
           </ul>
         </div>
       </section>
-
     </div>
   </body>
 </html>

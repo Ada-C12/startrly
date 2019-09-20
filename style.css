@@ -18,7 +18,6 @@ div>section:nth-of-type(3) li strong {
 li p {  
   display: inline;
   display: inline-flex;
-  color: green;
   position: absolute;
   top: 950px;
   width: 320px;

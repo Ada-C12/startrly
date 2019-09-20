@@ -1,11 +1,16 @@
-/* * {
+* {
   border: 3px solid lightblue;
-} */
+}
 /* For design & debug purpose only  */
 
 .container {
   display: flex;
   flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+  background-color: lightgray;
 }
 
 .nav ul {
@@ -14,6 +19,10 @@
   display: flex; 
   flex-direction: row;
   justify-content: space-around;
+}
+
+.nav ul li:hover {
+  background-color: lightsalmon;
 }
 
 .section_1 {
@@ -59,8 +68,18 @@
 .section_3 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-bottom: 3px solid lightgray;
+  text-align: center;
+}
+
+.section_3 ul {
+  list-style-type: none;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.section_3 ul li {
+
 }
 
 .section_4 {
@@ -80,6 +99,8 @@
 
 .section_5 ul {
   list-style: none;
+  display: flex;
+  justify-content: row;
 }
 
 .section_5 img {

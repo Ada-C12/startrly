@@ -1,0 +1,162 @@
+body {
+  font-family: 'Concert One', cursive;
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+nav {
+  height: 4em;
+  background:lightblue;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0em; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 2;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5em;
+  padding-right: 2em;
+}
+
+#header {
+  margin-top: 6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  justify-content: space-between;
+}
+
+#header >h1 {
+  font-size: 4em;
+}
+
+#header > sub {
+  font-size: 1.5em;
+  padding-bottom: 3em;
+}
+
+#header > a {
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  color: gray;
+  padding: 1em;
+  border-radius: 25px;
+  border: 2px solid lightblue;
+  width: 250px;
+  height: 30px; 
+}
+
+#header > a:hover { 
+  background-color: rgb(245, 181, 214);
+}
+
+.quote {
+  border: 1px solid gray;
+  line-height: 2em;
+  font-size: 2em;
+  font-family: 'Times New Roman';
+  font-style:italic;
+}
+
+.quote blockquote:before {
+  content: open-quote;
+}
+
+.quote blockquote:after {
+  content: close-quote;
+}
+
+.quote p {
+  text-align: right;
+  margin-right: 7em;
+}
+
+.grid-container {
+  position:relative;
+  text-align:justify;
+  display:grid;
+  grid-template-areas: 'left center right';
+}
+
+.left {
+  grid-area:left;
+}
+
+.center{
+  grid-area:center;
+}
+
+.right {
+  grid-area:right;
+}
+
+section > h2 {
+  text-align:center;
+  padding: 1em;
+} 
+
+.grid-container li img {
+  float:left;
+  padding: .5em;
+}
+
+.team > h2 {
+  text-align:center;
+}
+
+.team {
+  display:flex;
+  justify-content: center;
+}
+
+.team img {
+  display:flex;
+  flex-direction:column;
+  align-content:center;
+  border-radius: 50%;
+  padding: .2em;
+  border: 1px solid;
+  margin-bottom:1em;
+}
+
+.team-item{
+  text-align:center;
+  width: 30%;
+  padding: 3.5%;
+}
+
+.sponsors {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sponsors img {
+  padding:.5em;
+}
+
+
+.footer {
+  border: 1px solid gray;
+  display: flex;
+  align-content: center;
+  background-color:lightblue;
+}
+
+#support, #about {
+  text-align:justify;
+  margin: 5%
+}
+
+h3 {
+  text-align:center;
+}

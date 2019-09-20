@@ -1,44 +1,37 @@
 
-* {
+/* * {
   border: red dotted 1px;
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 nav ul {
   display: grid;
   grid-template-columns: 4fr 1fr 1fr;
-  margin: 3% 2%;
   list-style: none;
+  margin: 3% 2%;
   font-weight: 700;
 }
 
-nav ul li {
-  width: 40%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-#logo-corner {
-  display: flex;
-  align-self: flex-end;
+section:nth-child(odd){
+  background-color: lightgray;
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
   font-size: 2.7em;
 }
 
 #top-opener {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
 #top-opener sub {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.2em;
   font-weight: 700;
   padding: 1em;
@@ -46,9 +39,6 @@ h1 {
 }
 
 #top-opener a {
-  display: flex;
-  justify-content: center;
-  width: 15%;
   border: lightgray solid 2px;
   border-radius: 5px;
   font-size: 1.2em;
@@ -60,9 +50,8 @@ h1 {
 
 .quote {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
   border-top: black solid 1px;
   border-bottom: black solid 1px;
   margin: 2em 0;
@@ -71,12 +60,13 @@ h1 {
 }
 
 blockquote {
-  position: relative;
   padding: 2em;
-  width: 70%;
-  display: flex;
-  align-content: center;
+  width: 67%;
   line-height: 2em;
+}
+
+blockquote:hover{
+  color: blue;
 }
 
 blockquote:before {
@@ -87,20 +77,13 @@ blockquote:after {
   content: close-quote;
 }
 
-blockquote:before,
-blockquote:after {
-  display: inline-block;
-  vertical-align: bottom;
-  font-size: 1em;
-  top: .1em;
-  position: relative;
+.quote p {
+  text-align: right;
+  width: 75%;
 }
 
-.quote p {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1em;
-  width: 20%;
+.quote p:before {
+  content: "-- "
 }
 
 h2 {
@@ -108,22 +91,21 @@ h2 {
   justify-content: center;
 }
 
-.why ul {
+ #why ul {
   display:flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-}
+} 
 
-.why ul>li {
-  display:flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+ #why ul>li>img {
+   float: left;
+ }
+
+ #why ul>li {
   width: 22%;
-  text-align: center;
   list-style: none;
-}
+} 
 
-.team-members ul {
+#team-members ul {
   display:flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -131,7 +113,7 @@ h2 {
   margin-right: 15%
 }
 
-.team-members ul>li {
+#team-members ul>li {
   display:flex;
   flex-flow: column wrap;
   text-align: center;
@@ -143,18 +125,37 @@ h2 {
   border-radius: 50%;
   border: lightgray solid 1px;
   padding: .5em;
+  margin: 4%;
 }
 
-.sponsors {
+#sponsors {
   list-style: none;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 4% 0;
 }
 
-.sponsors ul {
+#sponsors ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.footer {
+  border-top: black solid 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+}
+
+.footer div {
+  margin-left: 5em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
 }

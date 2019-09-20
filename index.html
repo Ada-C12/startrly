@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Startrly</title>
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <div>
-
-
       <nav>
         <ul>
           <li>
@@ -22,97 +27,123 @@
         </ul>
       </nav>
 
-
-      <section>
+      <section class="center-text section-content border-bottom">
         <h1>Startrly</h1>
         <sub>A catchy tagline for a great solution</sub>
-        <a href="#">Some Call to Action</a>
+        <a class="btn" href="#">Some Call to Action</a>
       </section>
 
-
-      <section>
+      <section class="section-content border-bottom">
         <blockquote>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </blockquote>
         <p>
           Mx. Lorem
         </p>
       </section>
 
-
-      <section>
-        <h2>Why?</h2>
-        <ul>
+      <section class="section-content border-bottom">
+        <h2 class="section-heading">Why?</h2>
+        <ul id="why-box">
           <li>
-            <img src="http://via.placeholder.com/100x100" />
-            <strong>Comfortable</strong>
-            <p>
-              Et quas molestias excepturi sint occaecati cupiditate non providents, ut aut reiciendis voluptatibus maiores.
-            </p>
+            <section>
+              <img src="http://via.placeholder.com/100x100" />
+              <strong>Comfortable</strong>
+              <p>
+                Et quas molestias excepturi sint occaecati cupiditate non
+                providents, ut aut reiciendis voluptatibus maiores.
+              </p>
+            </section>
           </li>
           <li>
-            <img src="http://via.placeholder.com/100x100" />
-            <strong>Robust</strong>
-            <p>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.
-            </p>
+            <section>
+              <img src="http://via.placeholder.com/100x100" />
+              <strong>Robust</strong>
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui.
+                Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                esse quam.
+              </p>
+            </section>
           </li>
           <li>
-            <img src="http://via.placeholder.com/100x100" />
-            <strong>Convenient</strong>
-            <p>
-              Itaque earum rerum hic tenetur a sapiente delectus.
-            </p>
+            <section>
+              <img src="http://via.placeholder.com/100x100" />
+              <strong>Convenient</strong>
+              <p>
+                Itaque earum rerum hic tenetur a sapiente delectus.
+              </p>
+            </section>
           </li>
         </ul>
       </section>
 
-
-      <section>
+      <section class="section-content border-bottom">
         <blockquote>
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+          sequi nesciunt.
         </blockquote>
         <p>
           Mx. Ipsum
         </p>
       </section>
 
-
-      <section>
-        <h2>Meet the team</h2>
-        <ul>
-          <li>
-            <img src="https://placebear.com/150/150" alt="profile for kari kiwi" />
+      <section class="section-content">
+        <h2 class="section-heading">Meet the team</h2>
+        <ul class="flex">
+          <li class="flex-item team-item-container">
+            <img
+              class="img-circle"
+              src="https://placebear.com/150/150"
+              alt="profile for kari kiwi"
+            />
             <span>Kari Kiwi</span>
             <span>CFO</span>
           </li>
-          <li>
-            <img src="https://placebear.com/150/150" alt="profile for dan dragon" />
+          <li class="flex-item team-item-container">
+            <img
+              class="img-circle"
+              src="https://placebear.com/150/150"
+              alt="profile for dan dragon"
+            />
             <span>Dan Dragon</span>
             <span>CMO</span>
           </li>
-          <li>
-            <img src="https://placebear.com/150/150" alt="profile for chris caribou" />
+          <li class="flex-item team-item-container">
+            <img
+              class="img-circle"
+              src="https://placebear.com/150/150"
+              alt="profile for chris caribou"
+            />
             <span>Chris Caribou</span>
             <span>CIO</span>
           </li>
-          <li>
-            <img src="https://placebear.com/150/150" alt="profile for charles cheetah" />
+          <li class="flex-item team-item-container">
+            <img
+              class="img-circle"
+              src="https://placebear.com/150/150"
+              alt="profile for charles cheetah"
+            />
             <span>Charles Cheetah</span>
             <span>Board Member, CTO</span>
           </li>
-          <li>
-            <img src="https://placebear.com/150/150" alt="profile for dee dugong" />
+          <li class="flex-item team-item-container">
+            <img
+              class="img-circle"
+              src="https://placebear.com/150/150"
+              alt="profile for dee dugong"
+            />
             <span>Dee Dugong</span>
             <span>Startup Enthusiast</span>
           </li>
         </ul>
       </section>
 
-
-      <section>
-        <h2>Sponsors</h2>
-        <ul>
+      <section class="section-content border-bottom">
+        <h2 class="section-heading">Sponsors</h2>
+        <ul class="grid">
           <li>
             <img src="http://via.placeholder.com/300x100" />
           </li>
@@ -131,10 +162,9 @@
         </ul>
       </section>
 
-
-      <section>
+      <section class="support-about">
         <div>
-          <h3>Support</h3>
+          <h3 class="last-head">Support</h3>
           <ul>
             <li>
               Demo
@@ -151,7 +181,7 @@
           </ul>
         </div>
         <div>
-          <h3>About</h3>
+          <h3 class="last-head">About</h3>
           <ul>
             <li>
               Our Mission
@@ -165,7 +195,6 @@
           </ul>
         </div>
       </section>
-
     </div>
   </body>
 </html>

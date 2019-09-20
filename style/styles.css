@@ -1,0 +1,191 @@
+html {
+  padding: 0;
+margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav ul {
+  background-color: #5e85a4;
+  color: white;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(6 1fr);
+  grid-template-rows: 1;
+  grid-template-areas:
+  "a b c d e f";
+}
+
+.b{
+  grid-area: b;
+}
+
+.e{
+  grid-area: e;
+  justify-content: flex-end;
+}
+
+.f {
+  grid-area: f;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: solid black 1px;
+  padding: 2em;
+  background-color: floralwhite;
+}
+
+.logo {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 3em;
+  margin: .5em;
+}
+
+section sub {
+  display: block;
+}
+
+.button {
+  border: .25px black solid;
+  background-color: #354d60;
+  /* papayawhip */
+  /* floralwhite */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  display: inline-block;
+  border-radius: 1em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.quote {
+  font-family: 'Lato', cursive;
+  font-weight: 600;
+  padding: 2em;
+  margin: 0;
+  background-color: white;
+  padding: 3.5em 15% 3.5em;
+  border-top: black solid .05em;
+  border-bottom: black solid .05em;
+}
+
+.quote p {
+    text-align: right;
+}
+
+.header2 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat (3 fr);
+  grid-template-rows: 1;
+  justify-content: space-around;
+  flex-direction: row;
+  grid-template-areas:
+  "A B C";
+}
+
+.A{
+  grid-area: A;
+}
+
+.B{
+  grid-area: B;
+  justify-content: flex-end;
+}
+
+.C {
+  grid-area: C;
+}
+
+.img {
+  float: left;
+  padding: 0 .5em 0;
+}
+
+.why-section {
+  background-color: floralwhite;
+  padding: 8em 0;
+}
+
+.bear-img {
+  border-radius: 50%;
+}
+
+span {
+  display: block;
+}
+
+.header2 {
+}
+
+.meet-team {
+  background-color: #5e85a4;
+  height: 1.6em;
+}
+
+.dabears {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: floralwhite;
+  padding: 1em;
+}
+
+.dabears li {
+  width: 30%;
+  text-align: center;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1.2em;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(5 fr);
+  grid-template-rows: 1;
+  grid-template-areas:
+  "Z Y X X X";
+  justify-items: center;
+  border-top: solid black .25px;
+  background-color: #354d60;
+  color: white;
+  padding-bottom: 1
+}

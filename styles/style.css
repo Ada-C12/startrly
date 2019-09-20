@@ -58,13 +58,13 @@ a:hover {
 .quote {
   font-style: italic;
   font-size: 1.2em;
-  background-color: salmon;
+  background-color: lightskyblue;
   border-bottom: 4px solid grey
   }
 blockquote+p {
   font-style: italic;
   text-align: right;
-  background-color: salmon
+  background-color: lightskyblue
   }
 
 h2 {
@@ -80,7 +80,6 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr
 }
-
 #reasons img {
   float: left
 }
@@ -99,14 +98,34 @@ h2 {
   filter: grayscale(100%);
   padding: .3em
 }
-#kiwi {
+
+.top {
   grid-row: 1 / 2;
+  padding: 1.5em
+}
+.bottom {
+  grid-row: 2 / 3;
+  padding: 1.5em
+}
+#kiwi {
   grid-column: 2 / 3
 }
+#dragon {
+  grid-column: 4 / 5
+}
+#caribou {
+  grid-column: 6 / 7
+}
+#cheetah {
+  grid-column: 3 / 4
+}
+#dugong {
+  grid-column: 5 / 6
+}
+
 #sponsors {
   background-color: lightskyblue
 }
-
 #sponsors ul {
   display: flex;
   flex-wrap: wrap;

@@ -1,36 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Startrly</title>
+    <link href="normalize.css" rel="normalize"/>
+    <link href="styles/style.css" rel="stylesheet"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+        </style>
   </head>
   <body>
-    <div>
+    <div class="container">
 
+      <header>
+        <nav>
+          <ul>
+           <li class="nav_item">
+              Startrly
+            </li>
+            <li class="nav_item">
+              Try Now!
+           </li>
+            <li class="nav_item">
+              About
+            </li>
+         </ul>
+       </nav>
+      </header>
 
-      <nav>
-        <ul>
-          <li>
-            Startrly
-          </li>
-          <li>
-            Try Now!
-          </li>
-          <li>
-            About
-          </li>
-        </ul>
-      </nav>
-
-
-      <section>
+      <section id="title">
         <h1>Startrly</h1>
         <sub>A catchy tagline for a great solution</sub>
         <a href="#">Some Call to Action</a>
       </section>
 
 
-      <section>
+      <section class="quote">
         <blockquote>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </blockquote>
@@ -40,7 +45,7 @@
       </section>
 
 
-      <section>
+      <section id="reasons">
         <h2>Why?</h2>
         <ul>
           <li>
@@ -68,7 +73,7 @@
       </section>
 
 
-      <section>
+      <section class="quote">
         <blockquote>
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
         </blockquote>
@@ -78,30 +83,30 @@
       </section>
 
 
-      <section>
+      <section id="team">
         <h2>Meet the team</h2>
         <ul>
-          <li>
+          <li class="top" id="kiwi">
             <img src="https://placebear.com/150/150" alt="profile for kari kiwi" />
             <span>Kari Kiwi</span>
             <span>CFO</span>
           </li>
-          <li>
+          <li class="top" id="dragon">
             <img src="https://placebear.com/150/150" alt="profile for dan dragon" />
             <span>Dan Dragon</span>
             <span>CMO</span>
           </li>
-          <li>
+          <li class="top" id="caribou">
             <img src="https://placebear.com/150/150" alt="profile for chris caribou" />
             <span>Chris Caribou</span>
             <span>CIO</span>
           </li>
-          <li>
+          <li class="bottom" id="cheetah">
             <img src="https://placebear.com/150/150" alt="profile for charles cheetah" />
             <span>Charles Cheetah</span>
             <span>Board Member, CTO</span>
           </li>
-          <li>
+          <li class="bottom" id="dugong">
             <img src="https://placebear.com/150/150" alt="profile for dee dugong" />
             <span>Dee Dugong</span>
             <span>Startup Enthusiast</span>
@@ -110,7 +115,7 @@
       </section>
 
 
-      <section>
+      <section id="sponsors">
         <h2>Sponsors</h2>
         <ul>
           <li>
@@ -132,9 +137,9 @@
       </section>
 
 
-      <section>
-        <div>
-          <h3>Support</h3>
+      <section id=footer>
+        <div class="foot">
+          <h3 >Support</h3>
           <ul>
             <li>
               Demo
@@ -150,7 +155,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="foot">
           <h3>About</h3>
           <ul>
             <li>

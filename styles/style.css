@@ -1,0 +1,192 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+}
+
+nav ul{
+  display: grid;
+  grid-template: 1fr/ 4fr 2fr 1fr;
+  margin-top: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+.heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+[href="#"] {
+  display: block;
+  margin: 1.5em;
+  text-decoration-line: none;
+  padding: 2%;
+  border: solid 1px;
+  border-radius: 5px;
+  color: black;
+  background-color: #FAF8AB;
+}
+
+[href="#"]:hover {
+  background-color: purple;
+  color: white;
+}
+
+section {
+  border-bottom: solid purple 1px;
+  min-height: 300px;
+}
+
+section > sub {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h2 {
+  padding-top: 2.5rem;
+  margin: 0;
+}
+
+.quote {
+  min-height: 20vw;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: 'Cinzel Decorative', cursive;
+  line-height: 2;
+  padding: 3em;
+}
+
+blockquote {
+  margin: 3em;
+}
+
+blockquote:before {
+  content: open-quote;
+  font-size: 2rem;
+}
+
+blockquote:after {
+  content: close-quote;
+  font-size: 2rem;
+}
+
+.quote > p:before {
+  content: "--"
+}
+
+.quote > p {
+  text-align: right;
+  margin-right: 3rem;
+}
+
+#why {
+  min-height: 15vw;
+  background-color: #FAF8AB;
+  padding: 3rem;
+}
+
+#why > ul {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  padding: 0%;
+}
+
+#why li {
+  max-width: 24vw;
+}
+
+#why li > img {
+  float: left;
+  margin: 5px;
+  margin-top: 0px;
+}
+
+#meet-the-team {
+  border-bottom: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #FAF8AB;
+}
+
+#meet-the-team > h2 {
+  margin: 3rem;
+  margin-bottom: 0;
+}
+
+#meet-the-team > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+  width: 60%;
+  margin-left: 17%;
+}
+
+#meet-the-team li {
+  margin: 3rem;
+}
+
+#meet-the-team span {
+  display: block;
+}
+
+.staff-photo {
+  padding: 3px;
+  border: solid purple 2px;
+  border-radius: 50%;
+}
+
+#sponsors {
+  display: flex;
+  flex-direction: column;
+}
+
+#sponsors > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0%;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: 20% auto;
+  padding-left: 5%;
+  min-height: 200px;
+}
+h3 {
+  text-align: left;
+}
+#footer ul {
+  padding-left: 0;
+}
+
+

@@ -37,7 +37,7 @@ h1 {
   display: block;
   margin: 1.5em;
   text-decoration-line: none;
-  padding: 1%;
+  padding: 2%;
   border: solid 1px;
   border-radius: 5px;
   color: black;
@@ -50,7 +50,7 @@ h1 {
 }
 
 section {
-  border-bottom: solid gray 1px;
+  border-bottom: solid purple 1px;
   min-height: 300px;
 }
 
@@ -159,7 +159,7 @@ blockquote:after {
 
 .staff-photo {
   padding: 3px;
-  border: solid grey 2px;
+  border: solid purple 2px;
   border-radius: 50%;
 }
 

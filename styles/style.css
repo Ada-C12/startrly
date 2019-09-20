@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+section {
+  text-align: center;
+}
+
+section:hover {
+  background: white;
+}
+
+section:hover + section {
+  background: #e5e5e5;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+nav>ul {
+  justify-content: left;
+}
+
+nav li {
+  min-width: 8em;
+}
+
+#home {
+  margin-right: 66%;
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#banner>* {
+  min-height: 2rem;
+}
+
+#banner>sub {
+ font-weight: bold;
+}
+
+#banner>h1 {
+  height: 2rem;
+}
+
+#banner a {
+  width: 10em;
+  height: 2em;
+  font-size: .75em;
+  text-decoration: none;
+  color: black;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  padding-top: 1.5em;
+}
+
+.quote {
+  font-style: italic;
+  font-size: .75em;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  margin: 2em;
+  padding: 1em;
+  background: #e5e5e5;
+}
+
+#reasons li {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  justify-content: left;
+  
+  max-height: 100px;
+  max-width: 220px;
+  
+  margin: 2em;
+  text-align: left;
+  font-size: .66em;
+}
+
+#reasons img {
+  grid-row: 1 / span 2;
+}
+
+#reasons p {
+  font-size: .66em;
+}
+
+#team li {
+  display: flex;
+  flex-direction: column;
+  margin: 5em;
+}
+
+#team img {
+  border: 2px lightgrey inset;
+  border-radius: 100px
+}
+
+#sponsors>ul {
+  justify-content: space-around;
+}
+
+#footer {
+  display: flex;
+  border-top: 1px solid lightgrey;
+}
+
+#footer>div {
+  margin-left: 5em;
+  margin-right: 5em;
+  text-align: left;
+}
+
+#footer ul {
+  flex-direction: column;
+}

@@ -1,0 +1,177 @@
+/* Apply to all */
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: lightgrey;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin: 30px;
+}
+
+h2 {
+  text-align: center;
+  grid-column: 2;
+  margin: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Content */
+
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 10%;
+  font-weight: bold;
+  font-size: 1em; 
+  text-align: center;
+  padding: 10px;
+}
+
+#try {
+  grid-column: 2;
+  text-align: right;
+}
+
+
+#startrly {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: capitalize;
+  margin: 30px;
+}
+
+sub {
+  font-size: 2em; 
+  font-weight: bold;
+  margin: 30px; 
+}
+
+#startrly a {
+  border: 1px solid black;  
+  font-size: 1.75em;
+  text-decoration: none;
+  padding: 20px;
+  margin: 60px;
+  border-radius: 10px;
+}
+
+
+.quote {
+  display: grid;
+  font-size: 2em;
+  font-style: italic;
+  justify-content: center;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  /* Google Font: */
+  font-family: 'Crimson Text', serif;
+  padding: 10%;
+}
+
+blockquote::before, blockquote::after {
+  content: '"';
+}
+
+blockquote {
+  grid-column: 2;
+  line-height: 150%;
+}
+
+.quote p {
+  grid-column: 2;
+  text-align: right;  
+}
+
+.quote p::before {
+  content: "--"
+}
+
+
+.why {
+  display: grid;
+  grid-template-columns: 1f 1fr 1fr;
+  height: 250px
+}
+
+.why img {
+  float: left;
+  padding: 5px; 
+}
+
+#comfortable {
+  grid-column: 1;
+}
+
+#robust {
+  grid-column: 2;
+}
+
+#convenient {
+  grid-column: 3;
+}
+
+
+.meet-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.meet-the-team {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.meet-the-team li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.meet-container img {
+  border-radius: 50%; 
+  padding: 5px;
+  border: 1px solid gray;
+  margin: 30px;
+}
+
+
+.sponsors {
+  margin: 50px; 
+}
+
+.sponsors ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;  
+  justify-content: space-around;
+  width: 90%;
+}
+
+/* Footer */
+
+  .bottom {
+    border-top: 1px solid gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+  } 
+
+  .bottom ul {
+    padding: 0;
+  }
+
+  .support {
+    margin-left: 30%;
+  }

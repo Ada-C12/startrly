@@ -1,0 +1,199 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+section {
+  border-bottom: solid rgb(150, 148, 148, .50) 1px;
+}
+
+.nav-container {
+  display: flex;
+  height: 10%;
+  justify-content: space-around;
+  list-style: none;
+  font-size: small;
+}
+
+.nav-item1 {
+  margin-right: 35em;
+}
+
+.nav-item3 {
+  margin-left: 5em; 
+}
+
+sub {
+  font-size: 1rem;
+}
+
+h2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.60em;
+  padding: 0.5em;
+  border: 0.15em solid rgb(161, 160, 160, .50);
+  border-radius: .4em;
+  font-weight: normal;  
+  padding: 0.75em;
+}
+
+h2 a:hover {
+  color: pink;
+}
+
+h2 {
+  margin-top: 1.50em;
+  margin-bottom: 3em;
+}
+
+blockquote {
+  text-align: left;
+  margin-top: 5em;
+  margin-bottom: 2em;
+  margin-left: 10em;
+  margin-right: 10em;
+  font-size: 0.95em;
+  line-height: 2em;
+}
+
+blockquote + p {
+  text-align: right;
+  margin-right: 10em;
+  margin-bottom: 5em;
+  font-size: 0.95em;
+}
+
+.why {
+  font-size: 1em;
+  margin-top: 2.5em;
+  margin-bottom: 2em;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: space-around;
+  height: 9em;
+  /* width: 100%; */
+  font-size: 0.9em;
+  margin-bottom: 4em;
+}
+
+.why-container {
+  list-style: none;
+  width: 20em;
+  display: grid;
+}
+
+.list-item1 {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: left;
+  margin-right: 0.5em;
+  margin-top: 0.1em;
+}
+
+.list-item2 {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: left;
+}
+
+.list-item3 {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: left;
+  margin-top: 2em;
+}
+
+.team {
+  border-bottom: none;
+}
+
+.team > h2 {
+  font-size: 1em;
+}
+
+.team-pictures {
+  padding: 0;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.team-pictures li img {
+  border-radius: 50%;
+  border: solid rgba(182, 176, 176, 0.3) 0.05em;
+  padding: 0.35em;
+  height: 8em;
+  width: 8em;
+  filter: grayscale(100%);
+}
+
+.team-pictures li {
+  margin-bottom: 3em;
+  list-style: none;
+  font-size: 0.7rem;
+  display: inline-block;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.team-pictures li span {
+  margin-top: 0.8em;
+  display: block;
+}
+
+.sponsors > h2 {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.sponsors > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.sponsors > ul li {
+  padding: 0.5em;
+}
+
+footer {
+  display: flex;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  flex-direction: row;
+}
+
+footer div:last-child {
+  margin-left: 8em;
+}
+
+footer div:first-child h3 {
+  font-size: 0.75em;
+  margin-left: 0.3em;
+}
+
+footer div:last-child h3{
+  font-size: 0.75em;
+  margin-right: 0.85em;
+}
+
+footer div ul {
+  list-style: none;
+  text-align: left;
+  font-size: 0.8em;
+  padding-left: 0.3em;
+}
+
+footer div ul li {
+  text-align: left;
+  font-size: 0.75em;
+}

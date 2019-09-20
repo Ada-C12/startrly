@@ -5,12 +5,17 @@ body {
   border: solid whitesmoke 10px;
 }
 
+.navbar {
+  position: fixed;
+  padding-left: 58px;
+}
+
 nav ul {
   list-style: none;
   text-align: right;
   font-weight: bold;
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr 1fr;
+  grid-template-columns: 1fr 8.5fr 8fr;
   position: relative;
   font-size: 20px;
 }
@@ -30,8 +35,8 @@ h2 {
   border-bottom-style: solid;
   border-bottom-color: gray;
   border-bottom-width: thin;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
   background-image: url("https://images.pexels.com/photos/205316/pexels-photo-205316.png?cs=srgb&dl=apple-clean-containers-205316.jpg&fm=jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -173,12 +178,17 @@ h2 {
   padding: 2%;
 }
 
+#sponsors img {
+  box-shadow: 5px 8px #888888;
+}
+
 #footer {
   display: grid;
-  padding-left: 20px;
+  padding-left: 70px;
   grid-template-columns: repeat(2, 0.25fr);
   justify-content: flex-start;
   background-color: lightgrey;
+  box-shadow: 5px 8px #888888;
 }
 
 #footer h3 {

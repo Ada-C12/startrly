@@ -15,9 +15,10 @@
 .container li:nth-child(2) {
   padding-left: 26em;
 }
-  * {
-  border: 1px solid blue;
-} 
+  
+* {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
 
 #startly {
   height: 9em;
@@ -26,12 +27,14 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: solid 1px gray;
-  padding: 0px 0px 10%
+  padding: 0px 0px 10%;
+  background-color: #8deb93;
 }
 
 #startly sub {
   min-height: 30px;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 #startly a {
@@ -43,8 +46,8 @@
   color: gray;
 }
 
-#startly sub {
-  font-weight: bold;
+#startly a:hover {
+  color: green;
 }
 
 .section_ { 
@@ -58,13 +61,11 @@
   padding: 0px 8% 0px;
   line-height: 2em;
   padding-bottom: 20px;
-  
 }
 
 .section_ p {
   text-align: right;
   padding: 0px 8% 0px 0px;
-
 }
 
 section h2 {
@@ -104,7 +105,6 @@ section h2 {
   flex-wrap: wrap;
   border: double 4px gray;
 }
-
 
 .team li:nth-child(4), .team li:nth-child(2) {
 align-self: flex-end;
@@ -150,6 +150,7 @@ span {
 .support {
   margin-right: 80em;
 }
+
 #support_title {
   text-indent: 2em;
   margin-right: 80em;
@@ -157,25 +158,14 @@ span {
 }
 
 #about_title {
- 
   margin-left: 15em;
   margin-top: -7em;
 }
 
 .about {
   margin-left: 15em;
-  
-}
-/* .footer {
-  display: grid;
-  grid-template-columns: 40% 40% 40%;
-
 }
 
-.about {
-  grid-column-start: 2;
-  justify-content: center;
-} */
 
 
 

@@ -13,14 +13,23 @@ section {
   justify-content: space-around;
   list-style: none;
   font-size: small;
+  margin-top: 3em;
 }
 
 .nav-item1 {
-  margin-right: 35em;
+  margin-right: 30em;
+}
+
+.nav-item2 {
+  margin-right: 7em; 
 }
 
 .nav-item3 {
-  margin-left: 5em; 
+  margin-right: 3em; 
+}
+
+.title {
+  margin-top: 5em;
 }
 
 sub {

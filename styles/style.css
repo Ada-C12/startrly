@@ -1,0 +1,133 @@
+
+/* This is where I create the lines that split up the various sections in Html will be <hr/> */
+/* hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em;
+    padding: 5em;
+} */
+body{
+  background: lemonchiffon;
+}
+ .container{
+  list-style-type: none;
+  display: flex; 
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.first-word-in-nav{
+  margin-right: 30em;
+  font-weight: bold;
+}
+
+.second-word-in-nav{
+  margin-right: 5em;
+  font-weight: bold;
+}
+
+.third-word-in-nav{
+  margin-right: 3em;
+  font-weight: bold;
+}
+
+.second-container{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10mm;
+  line-height: 1.0;
+}
+
+.second-container h1{
+  font-weight: bold;
+  font-size: 3.0em;
+  padding: 0;
+}
+
+.second-container sub{
+  padding-bottom: 15mm;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.second-container a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+}
+.button{
+  border-radius: 15px;
+  background-color: lightblue; 
+  border: grey;
+  border: 2px solid grey;
+  color: lightblue;
+  padding: 20px 45px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px; 
+}
+.blockquote-section{
+  padding-top: 5em;
+  padding-bottom: 5em;
+  padding-left: 3em;
+  padding-right: 3em;
+  text-align: center left;
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+#start-quote{
+  quotes: '\201c' '\201d';
+}
+
+#start-quote:before {content: open-quote;}
+#start-quote:after {content: close-quote;}
+
+ #quote-author{
+  text-align: right;
+}
+
+/* This is how you create a line without using Hr in html */
+/* #quote-author:before{
+  content: "";
+  display: block;
+  border: 1px solid grey;
+  width: 75%
+  margin: 20px auto;
+} */
+/* TO DO Dashes before author */
+
+section h2{ 
+  text-align: center;
+}
+
+.third-container{
+  list-style-type: none;
+  display: flex; 
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: 1em;
+  padding: 20px 25px;
+}
+
+.third-container img{
+  float: left
+}
+/* Figure out how to align text alonside pics in why section */
+.third-container p{
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.container-team-pics{
+  display: flex; 
+  justify-content: space-around;
+  flex-direction: row;
+}
+

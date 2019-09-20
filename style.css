@@ -147,7 +147,7 @@ blockquote + p {
 
 .team-pictures li img {
   border-radius: 50%;
-  border: solid rgba(182, 176, 176, 0.3) 0.05em;
+  border: solid rgba(182, 176, 176) 0.05em;
   padding: 0.35em;
   height: 8em;
   width: 8em;

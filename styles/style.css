@@ -1,3 +1,4 @@
+/* Apply to all */
 
 body {
   font-family: Helvetica, sans-serif;
@@ -5,9 +6,22 @@ body {
   margin: 10px;
 }
 
+h1 {
+  font-size: 3.5em;
+  margin: 30px;
+}
+
+h2 {
+  text-align: center;
+  grid-column: 2;
+  margin: 30px;
+}
+
 ul {
   list-style: none;
 }
+
+/* Content */
 
 nav ul {
   display: grid;
@@ -24,16 +38,6 @@ nav ul {
   text-align: right;
 }
 
-h1 {
-  font-size: 3.5em;
-  margin: 30px;
-}
-
-sub {
-  font-size: 2em; 
-  font-weight: bold;
-  margin: 30px; 
-}
 
 #startrly {
   display: flex;
@@ -42,7 +46,12 @@ sub {
   justify-content: space-around;
   text-transform: capitalize;
   margin: 30px;
+}
 
+sub {
+  font-size: 2em; 
+  font-weight: bold;
+  margin: 30px; 
 }
 
 #startrly a {
@@ -53,6 +62,7 @@ sub {
   margin: 60px;
   border-radius: 10px;
 }
+
 
 .quote {
   display: grid;
@@ -84,16 +94,16 @@ blockquote {
   content: "--"
 }
 
-h2 {
-  text-align: center;
-  grid-column: 2;
-  margin: 30px;
-}
 
 .why {
   display: grid;
   grid-template-columns: 1f 1fr 1fr;
   height: 250px
+}
+
+.why img {
+  float: left;
+  padding: 5px; 
 }
 
 #comfortable {
@@ -108,10 +118,6 @@ h2 {
   grid-column: 3;
 }
 
-.why img {
-  float: left;
-  padding: 5px; 
-}
 
 .meet-container {
   display: grid;
@@ -140,9 +146,11 @@ h2 {
   margin: 30px;
 }
 
+
 .sponsors {
   margin: 50px; 
 }
+
 .sponsors ul {
   display: flex;
   flex-direction: row;
@@ -152,11 +160,12 @@ h2 {
   width: 90%;
 }
 
+/* Footer */
+
   .bottom {
     border-top: 1px solid gray;
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
-
   } 
 
   .bottom ul {

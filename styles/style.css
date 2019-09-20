@@ -52,11 +52,11 @@ nav li {
   padding-right: 1em;
 }
 
-#footer-ish {
+.footer-ish {
   display: flex;
 }
 
-#footer-ish div {
+.footer-ish div {
   padding-top: 1rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;

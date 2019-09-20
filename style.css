@@ -12,7 +12,7 @@ header {
 }
 
 section {
-  border-bottom: solid rgb(150, 148, 148, .50) 1px;
+  border-bottom: solid rgb(150, 148, 148) 1px;
 }
 
 .nav-container {

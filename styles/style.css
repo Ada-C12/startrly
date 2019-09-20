@@ -1,6 +1,6 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  border: .1em solid lightgray;
+  font-family: 'Roboto', sans-serif;
+  /* border: .1em solid lightgray; */
 }
 nav ul, #sponsors ul {
   font-size: .6em;
@@ -28,6 +28,7 @@ nav ul li:nth-last-child(2), nav ul li:last-child {
 #title-area a:last-child {
   border: solid;
   color: black;
+  background-color: antiquewhite;
   border-color: lightgray;
   border-width: .15em;
   border-radius: .4em;

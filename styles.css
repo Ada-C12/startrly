@@ -113,12 +113,12 @@ h2 {
 }
 
 .team-container2{
-  border: 1px solid blue; 
   display: flex;
   align-items: center; 
   justify-content: space-evenly;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: : 10%
 }
 
 .member{
@@ -131,10 +131,26 @@ h2 {
 }
 
 .footer-container {
-margin: 5%;
-  border: 1px solid blue; 
+  margin: 5%;
   display: flex;
   width: 400px;
   flex-direction:row; 
   justify-content: space-evenly; 
+}
+.container {
+  display: grid;
+  grid-template-columns: 300px 250px 275px 250px;
+  grid-template-rows: 125px 100px;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin: 5%;
+  text-align: center;  
+}
+
+.grid-item {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }

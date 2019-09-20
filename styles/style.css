@@ -51,7 +51,7 @@ header ul {
     vertical-align: bottom
   }
 
-a:hover {
+#title a:hover {
   color: purple
 }
 

@@ -1,0 +1,225 @@
+
+body {
+  font-family:"Didact Gothic",sans-serif; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;   /* Pack flex items from the end */
+
+}
+.page {
+  background-color: beige;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+  width: 80%;
+  margin-top: 0;
+}
+
+.startrly {
+  margin-right: auto;
+
+}
+
+nav ul li {
+  display: inline;
+  padding: 50px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title h1{
+  font-size: 60px;
+}
+
+.title sub {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.title a {
+  text-align: center;
+  text-decoration: none;
+  position: inherit;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 5px;
+  width: 20%;
+  background: lightgray;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.title a:hover {
+  color: red; 
+  padding-bottom: 10px; 
+}
+
+.first-blockquote {
+  font-style: italic;
+  font-size: 17px;
+  color: black;
+  text-align: center;
+  padding-top: 30px;
+  padding-right: 40px;
+  height: 100px;
+  border: 1px solid blue;
+  background-color: lightblue;
+}
+
+/*https://tympanus.net/codrops/css_reference/quotes/*/
+
+.first-blockquote blockquote:before{
+  content: open-quote;
+}
+.first-blockquote blockquote:after {
+  content: close-quote;
+}
+
+.first-blockquote :before, q:after {
+  color: brown;
+}
+
+.first-blockquote p {
+  text-align: right;
+  font-size: 20px;
+  padding-right: 60px;
+}
+
+.first-blockquote p:before{
+  content: "--";
+}
+
+.why h2 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+
+}
+
+.why ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+  text-align: left;
+  list-style: none;
+  padding-top: 70px;
+
+}
+
+.why img {
+  float: left;
+  margin-right: 5px;
+  padding-bottom: 100px;
+}
+
+.second-blockquote {
+  font-style: italic;
+  font-size: 17px;
+  color: black;
+  text-align: center;
+  padding-top: 30px;
+  height: 100px;
+  border: 1px solid blue;
+  background-color: lightblue;
+}
+
+/*https://tympanus.net/codrops/css_reference/quotes/*/
+
+.second-blockquote blockquote:before{
+  content: open-quote;
+}
+.second-blockquote blockquote:after {
+  content: close-quote;
+}
+
+.second-blockquote :before, q:after {
+  color: brown;
+}
+
+.meet-team ul {
+  display: flex;
+}
+
+.meet-team ul li {
+  margin: 20px;
+  list-style: none;
+}
+
+.second-blockquote p {
+  text-align: right;
+  font-size: 20px;
+  padding-right: 60px;
+}
+
+.second-blockquote p:before {
+  content: "--";
+}
+
+.meet-team h2 {
+  padding-top: 100px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+/*https://www.webfx.com/blog/web-design/circular-images-css/*/
+.meet-team img {
+  border-radius: 50%;
+  list-style: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.meet-team span {
+  display: block;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 10px;
+}
+
+.sponsor h2 {
+  text-align: center;
+  font-size : 30px;
+}
+
+.sponsor ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  list-style: none;
+  padding-top: 30px;
+  padding-bottom: 40px;  
+  width: 10px;
+}
+
+.Contacts {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  height: 100px;
+  border: 1px solid blue;
+  background-color: lightblue;
+  
+}
+
+.Contacts h3 {  
+  padding-left: 2rem ;
+  list-style: none;
+
+}
+.Contacts li {
+  list-style: none;
+  font-size: 10px;
+}

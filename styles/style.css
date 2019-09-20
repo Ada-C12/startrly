@@ -194,7 +194,7 @@ ul#members .links li img {
 ul#sponsors .sponsor-links {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     margin: 0;
 }
 

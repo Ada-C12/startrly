@@ -1,0 +1,561 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
+
+/* keyframes code */
+@keyframes fadeInOnLoad {
+  /* start at transparent */
+  0% {
+    opacity: 0;
+  }
+  /* end at opaque */
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: 'Open Sans';
+  background-color: #4ED8FF;
+}
+
+ul {
+  /* override default 40px left padding */
+  padding-inline-start: 0;
+  /* hide bullet points */
+  list-style-type: none;
+  /* override default list item margin and padding */
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+.main_header {
+  font-family: 'Sigmar One';
+}
+
+.accent {
+  font-family: 'Unica One';
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* NAV */
+
+nav {
+  background-color: rgba(32,32,32,98%);
+  border: 0.09em solid black;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  display: grid;
+  margin: 1.5em;
+  font-weight: bold;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  column-gap: 2em;
+}
+
+nav ul li {
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 2em;
+  background-color: #666666;
+  /* add a light shadow to add contrast against the background */
+  text-shadow: #808080 0 0 1em;
+}
+
+nav ul li:hover {
+  background-color: #5444ad;
+  color: #F0F0F0;
+  text-shadow: none;
+  cursor: pointer;
+}
+
+nav ul li:active {
+  transform: translate(0.2em, 0.2em);
+  box-shadow: 0.3em 0.3em #FAC04C;
+}
+
+#homepage {
+  /* `homepage` should be in the left corner */
+  grid-column-start: 1;
+}
+
+#try_now {
+  /* `try_now` should be to the left of the right corner */
+  grid-column-start: 3;
+}
+
+#about {
+  /* `about` should be in the right corner  */
+  grid-column-start: 4;
+}
+
+/* MAIN SPLASH */
+
+#main_splash {
+  /* center splash contents */
+  text-align: center;
+  padding: 4em;
+  /* source: https://www.pexels.com/photo/close-view-of-hornbill-2222452/ */
+  background-image: url("../images/animal-animal-photography-avian-2222452.jpg");
+  /* parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main_splash h1 {
+  border: 1px solid #F0F0F0;
+  font-size: 7vw;
+  color: #FAC04C;
+  width: 100%;
+  padding: 0.2em;
+  margin: auto;
+  margin-top: 1.7em;
+  margin-bottom: 0.7em;
+  background-color: #33849B;
+  border-radius: 2em;
+
+  /* 1.5s => fade in should last 1.5 seconds */
+  /* ease-in => gradually transition */
+  /* 0s => don't delay running the code */
+  /* 1 => only run the code once */
+  /* explanation from https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load, who used transform instead of opacity */
+  animation: 1.5s ease-in 0s 1 fadeInOnLoad;
+}
+
+#main_splash sub {
+  line-height: 1.5em;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #F0F0F0;
+  text-shadow: black 0 0 0.3em;
+}
+
+#main_splash a, #main_splash sub {
+  font-size: 1.5em;
+}
+
+#main_splash a {
+  /* moves item to its own line */
+  display: block;
+  width: 20%;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  padding: 0.8em;
+  /* adds a border */
+  border: 0.15em solid #5444ad;
+  border-radius: 0.5em;
+  /* removes default link styling */
+  text-decoration: none;
+  color: black;
+  background-color: #FAC04C;
+}
+
+#main_splash a:hover {
+  color: #F0F0F0;
+  border: 0.15em solid #FAC04C;
+  background-color: #5444ad;
+}
+
+#main_splash a:active {
+  transform: translate(0.2em, 0.2em);
+  box-shadow: 0.4em 0.4em #FAC04C;
+}
+
+
+/* BLOCKQUOTES */
+
+.blockquote {
+  margin: auto;
+  margin-bottom: 2.5em;
+  /* add a border on top and bottom */
+  border-top: 0.09rem solid #112A32;
+  border-bottom: 0.09rem solid #112A32;
+  /* make flex container */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 4em;
+  /* modify font */
+  font-size: 1.4em;
+  line-height: 2em;
+  font-style: italic;
+}
+
+.blockquote blockquote, .blockquote p {
+  background-color: #3abce0;
+  padding: 1em;
+  border-radius: 2em;
+}
+
+.blockquote blockquote {
+  /* center item within container */
+  align-self: center;
+  /* restrict quote content width */
+  width: 60vw;
+}
+
+.blockquote blockquote::before {
+  content: "\" "
+}
+
+.blockquote blockquote::after {
+  content: " \""
+}
+
+.blockquote p {
+  /* align item to right side of container */
+  align-self: flex-end;
+  /* keep quote source on lower right */
+  width: 20vw;
+}
+
+.blockquote p::before {
+  content: "-- "
+}
+
+
+/* 'WHY?' SECTION */
+
+#why_us ul {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#why_us ul > li {
+  flex: 1;
+  padding: 1em;
+  margin: 1.6em;
+  /* make the list items a flex container */
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #33849B;
+  border-radius: 1em;
+}
+
+#why_us strong {
+  color: #FAC04C;
+  padding: 0.2em;
+}
+
+#why_us ul li img {
+  width: 6em;
+  height: 6em;
+  padding: 0.1em;
+  background-color: #F0F0F0;
+}
+
+#why_us ul li div {
+  flex: 1;
+  padding-left: 0.6em;
+}
+
+#why_us p {
+  text-shadow: #99e8ff 0 0 2em;
+}
+
+/* 'MEET THE TEAM' and 'SPONSORS' SECTIONS */
+
+.flexible {
+  margin: auto;
+  padding: 1em;
+}
+
+.flexible ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+/* 'MEET THE TEAM' */
+
+#meet_team {
+  width: 60vw;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+#meet_team h2 {
+  align-self: center;
+}
+
+#meet_team ul {
+  align-self: center;
+  /* grid */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+#meet_team li:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#meet_team li:nth-child(2) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#meet_team li:nth-child(3) {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#meet_team li:nth-child(4) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#meet_team li:last-child {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#meet_team ul li {
+  padding: 2.5em;
+}
+
+#meet_team ul li img {
+  /* make photos round */
+  border-radius: 50%;
+  padding: 0.4em;
+  margin-bottom: 1em;
+  border: 0.05em solid #202020;
+  background-color: #FAC04C;
+}
+
+#meet_team ul li span {
+  /* put text on new lines */
+  display: block;
+  text-align: center;
+}
+
+/* SPONSORS */
+
+#sponsors {
+  width: 80vw;
+}
+
+#sponsors h2 {
+  margin-bottom: 2em;
+}
+
+#sponsors ul li {
+  /* height: min-content; */
+  align-self: center;
+  padding: 0.1em 0.1em 0em 0.1em;
+  background-color: #F0F0F0;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #202020;
+  border-top: 0.09em solid black;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 4em;
+}
+
+footer div {
+  padding: 1em 4em 4em 5em;
+}
+
+footer div > * {
+  background-color: #666666;
+  text-shadow: #808080 0 0 1em;
+  padding: 1em;
+  border-radius: 2em;
+}
+
+footer ul:hover {
+  background-color: #5444ad;
+}
+
+footer li:hover {
+  color: #F0F0F0;
+  cursor: pointer;
+}
+
+footer li:active {
+  transform: translate(0.1em, 0.1em);
+}
+
+
+@media only screen and (max-width: 800px) {  
+
+  /* NAV */
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a:first-child {
+    margin-right: auto;
+  }
+
+  nav a:nth-child(2) {
+    align-self: flex-end;
+  }
+
+
+  /* MAIN SPLASH */
+
+  #main_splash h1 {
+    border: 1px solid #F0F0F0;
+    font-size: 12vw;
+  }
+
+  #main_splash sub {
+    line-height: 1.5em;
+  }
+
+  #main_splash a {
+    width: 50%;
+    font-size: 4vw;
+  }
+
+
+  /* BLOCKQUOTES */
+
+  .blockquote {
+    padding: 2em;
+    font-size: 3vw;
+  }
+
+  .blockquote blockquote {
+    width: 65vw;
+  }
+
+
+  /* 'WHY?' SECTION */
+
+  #why_us ul {
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+
+  #why_us img {
+    display: none;
+  }
+
+  #why_us ul li div {
+    padding: 1.2em;
+    font-size: 3vw;
+  }
+
+
+  /* 'MEET THE TEAM' */
+
+  #meet_team {
+    width: 80vw;
+  }
+
+  #meet_team ul li {
+    width: 20vw;
+  }
+
+  #meet_team ul li img {
+    height: 22vw;
+  }
+  
+  /* grid stuff  */
+  #meet_team ul {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1em;
+  }
+
+  #meet_team ul li span {
+    padding: 0.2em;
+  }
+
+  #meet_team li:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #meet_team li:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #meet_team li:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #meet_team li:nth-child(4) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #meet_team li:last-child {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+
+  /* SPONSORS */
+
+  #sponsors {
+    width: 80vw;
+  }
+
+  #sponsors ul li {
+    margin: 0.2em;
+  }
+
+  /* FOOTER */
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer div {
+    width: 50%;
+    margin: auto;
+    padding: 1em;
+  }
+
+}

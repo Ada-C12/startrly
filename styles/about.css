@@ -1,0 +1,30 @@
+/* about.css */
+
+.construction_splash {
+  /* center splash contents */
+  text-align: center;
+  /* source: https://www.pexels.com/photo/assorted-coloured-plastic-dinosaur-toys-970206/ */
+  background-image: url("../images/animals-dinosaur-figurines-970206.jpg");
+  /* parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 40em;
+}
+
+.construction_splash > * {
+  margin: auto;
+}
+
+.construction_splash h1 {
+  padding-top: 8em;
+}
+
+.construction_splash p {
+  padding-top: 3em;
+}
+
+footer {
+  margin-top: 0;
+}

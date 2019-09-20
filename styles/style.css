@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cardo|Hind+Madurai&display=swap');
 
 body {
+    background-color: snow;
     font-family: 'Cardo', serif;
     width: 100vw;
     text-align: center;
@@ -20,6 +21,12 @@ ul {
     justify-content: space-around;
     padding: 0px;
     margin-bottom: 0px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: snow;
 }
 
 nav ul {
@@ -70,7 +77,8 @@ section {
 
 .container section a {
     width: 20%;
-    height: 10%;
+    margin: 10px;
+    padding: 10px;
     line-height: 50px;
     display: flex;
     flex-direction: column;
@@ -81,6 +89,10 @@ section {
     align-self: center;
     text-decoration: none;
 
+}
+
+.container section a:hover {
+    width: 20.5%;
 }
 
 section.quote {
@@ -100,6 +112,7 @@ section.quote {
 }
 
 section.quote blockquote {
+    background-color: lavenderblush;
     quotes: """ """;
     font-size: 2em;
     text-align: left;

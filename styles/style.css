@@ -417,14 +417,14 @@ footer li:active {
 
   nav ul {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
   }
 
-  #homepage {
+  nav a:first-child {
     margin-right: auto;
   }
 
-  #try_now {
+  nav a:nth-child(2) {
     align-self: flex-end;
   }
 

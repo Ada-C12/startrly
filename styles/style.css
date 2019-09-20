@@ -1,0 +1,134 @@
+* {
+  font-size: .98em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: .1em solid lightgray;
+}
+nav ul, #sponsors ul {
+  font-size: .75em;
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr;
+  grid-template-rows: 3em;
+  align-items: center;
+  list-style: none;
+  font-weight: bold;
+}
+nav ul li:nth-last-child(2), nav ul li:last-child {
+  text-align: center;
+}
+
+#title-area {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  text-align: center; 
+  max-height: 11em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+#title-area a:last-child {
+  border: solid;
+  color: black;
+  border-color: lightgray;
+  border-width: .15em;
+  border-radius: .4em;
+  margin-top: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: .5em;
+  padding: .6em 1em .7em 1em;
+  text-decoration: none;
+}
+
+#title-area sub {
+  font-size: larger;
+  font-weight: bold;
+  margin-top: .3em;
+
+}
+
+.top-border {
+  border-top: 2px solid lightgray;
+  padding-top: 3rem;
+}
+
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  padding: 6%;
+}
+
+.quote-box p:before {
+  content: "--";
+}
+.quote-box p {
+  text-align: right;
+  margin-right: 1.5em;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote {
+  line-height: 2em;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
+#why, #team{
+  padding-top: 1.5rem;
+}
+
+#why h2, #team h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#why ul, #team ul, #sponsors ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3em;
+  row-gap: 1.5em;
+  list-style: none;
+  padding: 0 2em 0 2em;
+  justify-content: center;
+  min-height: 10em;
+}
+
+#why ul li img {
+  float: left
+}
+
+#team, #sponsors {
+  display: grid;
+}
+
+#team ul, #sponsors ul {
+  display: flex;
+}
+
+#team li, #sponsors li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+footer {
+  font-size: .8em;
+  display: grid;
+  grid-template-columns: 2fr 2fr 6fr;
+}
+
+footer ul {
+  list-style: none;
+}
+
+
+

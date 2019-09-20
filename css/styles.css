@@ -8,9 +8,16 @@
   min-height: 50px;
 }
 
- {
-  border: 1px solid blue;
+.container li:nth-child(3) {
+  padding-right: 10em;
 }
+
+.container li:nth-child(2) {
+  padding-left: 26em;
+}
+  * {
+  border: 1px solid blue;
+} 
 
 #startly {
   height: 9em;
@@ -24,7 +31,7 @@
 
 #startly sub {
   min-height: 30px;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 #startly a {
@@ -108,6 +115,67 @@ span {
   text-align: center;
   padding-bottom: 10px;
 }
+
+.sponsors {
+  display: flex;
+  align-items: flex-start;
+  list-style-type: none;
+  min-height: 16em;
+  padding-top: 2em;
+  border-bottom: solid 1px gray;
+  padding-bottom: 5%
+}
+
+.sponsors li:nth-child(4) {
+  align-self: flex-end;
+
+}
+
+.sponsors li:nth-child(3) {
+  width: 60px;
+}
+
+.sponsors li:nth-child(2) {
+  width: 18em;
+}
+
+.sponsors li:nth-child(1) {
+  width: 20em;
+}
+
+.support, .about {
+  list-style-type: none;
+}
+
+.support {
+  margin-right: 80em;
+}
+#support_title {
+  text-indent: 2em;
+  margin-right: 80em;
+
+}
+
+#about_title {
+ 
+  margin-left: 15em;
+  margin-top: -7em;
+}
+
+.about {
+  margin-left: 15em;
+  
+}
+/* .footer {
+  display: grid;
+  grid-template-columns: 40% 40% 40%;
+
+}
+
+.about {
+  grid-column-start: 2;
+  justify-content: center;
+} */
 
 
 

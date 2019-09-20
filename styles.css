@@ -46,9 +46,18 @@
   min-height: 50px;
 }
 
-body {
-  font-family: 'helvetica', 'arial', sans-serif;
-  text-align: center;
+.sentence {
+  font-size: 40px;
+  border: 1px solid white; 
+  width: 500px;
+  height: 80px;
+  border-radius: 25px;
+  background: lightpink;
+}
+
+.short-quote{
+  margin-top: 5%;
+  font-size: 20px;
 }
 
 #myHeader {

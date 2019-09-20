@@ -1,0 +1,54 @@
+@media only screen and (max-width: 630px) {
+  nav ul {
+    grid-template: 1fr / 1vw 55vw 15vw 15vw;
+  }
+
+
+
+  .quote {
+    line-height: 200%;
+    padding: 5px 15px 5px 15px;
+  }
+
+  .tellmewhy ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tellmewhy img {
+    display: none;
+  }
+  .tellmewhy ul li {
+    width: 60vw;
+    grid-template: 1fr 2fr / 1fr;
+    font-size: 1.3em;
+    padding-bottom: 20px;
+  }
+
+  .team ul {
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    padding: 0;
+  }
+  .team ul li {
+    grid-column-end: span 2;
+    text-align: center; 
+    padding-bottom: 10px;
+  }
+  .team ul li:nth-of-type(4) {
+    grid-column-start: 3;
+  }
+  .team ul li:nth-of-type(5) {
+    grid-column-start: 2;
+  }
+
+
+  .support {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: none;
+  }
+  .support div {
+    padding: 0;
+  }
+
+}

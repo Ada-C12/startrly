@@ -1,0 +1,189 @@
+body {
+  font-family: 'Crafty Girls', cursive;
+}
+
+.nav-list {
+  display: grid;
+  grid-template: 100% / 5% 65% 18% 7%;
+  list-style: none;
+}
+
+.nav-list > li:first-child {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+}
+
+.nav-list > li:nth-child(2) {
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+}
+
+.nav-list > li:nth-child(3) {
+  grid-column: 4 / 4;
+  grid-row: 1 / 1;
+}
+
+.title-page {
+  display: flex;
+  height: 24em;
+  flex-direction: column;
+  align-items: center;
+  background-color: pink;
+  text-transform: capitalize;
+}
+
+.title-page > h1 {
+  margin-top: 3.5em;
+}
+
+.title-page > sub {
+  font-size: larger;
+  font-weight: bold;
+  margin-top: .5em;
+}
+
+.title-page > a {
+  font-size: large;
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+  border-style: double;
+  border-color: gray;
+  border-radius: 1em;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+.title-page > a:hover {
+  background-color: cornflowerblue;
+  color: white;
+  border-color: white;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: larger;
+  padding: 4em;
+  font-style: italic;
+  border-top: solid black thin;
+  border-bottom: solid black thin;
+}
+
+.quote > p {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.why {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lavender;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  min-height: 10em;
+}
+
+.why > ul {
+  width: 95%;
+  height: 7em;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.why > ul > li > img {
+  float: left;
+  padding-right: 1em;
+}
+
+
+.why > ul > li > p {
+  max-width: 30em;
+  font-size: small;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
+  list-style: none;
+  width: 60%
+}
+
+.team > ul > li {
+  display: grid;
+  grid-template: 80% 10% 10% / 100%;
+  text-align: center;
+}
+
+.team > ul > li > img {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  border-style: double;
+  border-width: thick;
+  border-color: lightgray;
+  border-radius: 50%;
+  margin: 2em;
+}
+
+.team > ul > li > span:first-child {
+  grid-column: 1 / 1;
+  grid-row: 3 / 3;
+}
+
+.team > ul > li > span:nth-child(2) {
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+  text-align: center;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: cornflowerblue;
+  width: 100%;
+  padding-bottom: 4em;
+}
+
+.sponsors > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  list-style: none;
+  min-width: 90%;
+}
+
+.lists {
+  display: grid;
+  grid-template: 100% / 10% 15% 15% 60%;
+}
+
+.menu:first-child {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+}
+
+.menu:nth-child(2) {
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+}
+
+.menu > ul {
+  list-style: none;
+  padding-left: 0;
+}

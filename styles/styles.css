@@ -194,7 +194,7 @@ grid-template-rows: 100%;
 .sponsors{
 width: 100%;
 height: 300px;
-border: solid black;
+margin-bottom: 200px;
 }
 
 .sponsors h2{
@@ -203,7 +203,7 @@ text-align: center;
 }
 
 .sponsors ul{
- border: solid red;
+
  display: flex;
  flex-wrap: wrap;
  justify-content: space-around;
@@ -219,4 +219,32 @@ text-align: center;
 
 /* This section is deeply flawed due to bad scaling.  */
 
+.additional-links{
+font-size: .5em;
+display: grid;
+grid-template-columns: 8% 15%;
+border-top: 1px solid lightgrey;
+}
+
+.additional-links h3{
+ font-size: 1.5em;
+ margin-top: 30px;
+}
+
+.additional-links div ul li{
+ list-style-type: none;
+
+}
+
+.additional-links div ul{
+ padding: 0
+}
+
+#support{
+ grid-column: 2/3;
+}
+
+#about{
+ grid-column: 3/4;
+}
 

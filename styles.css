@@ -101,6 +101,7 @@
   list-style: none;
   display: flex;
   justify-content: row;
+  flex-wrap: wrap;
 }
 
 .section_5 img {
@@ -117,6 +118,9 @@
 
 .section_6 ul {
   list-style: none;
+  display: flex;
+  justify-content: row;
+  flex-wrap: wrap;
 }
 
 .section_7 {

@@ -1,0 +1,134 @@
+/* google font import */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
+
+body {
+  text-align: center;
+  margin-right: 8%;
+  margin-left: 8%;
+  font-family: sans-serif;
+}
+
+body div > section {
+  margin-top: 2%;
+  padding-bottom: 2%;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 10%;
+  padding-left: 10%;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  padding: 5%;
+  font-size: 80%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav ul :first-child {
+  margin-right: auto;
+}
+
+/* using the # for the ids */
+#index_page { 
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  line-height: 500%;
+}
+
+#index_page sub {
+  font-size: 150%;
+  margin-bottom: 5%;
+}
+
+#index_page a {
+  text-decoration: none;
+  color: black;
+  border-radius: 1.6rem;
+  border: solid lightgray;
+  width: 12.5rem;
+  align-self: center;
+}
+
+#why h2 {
+  font-size: 2rem;
+}
+
+#why_answers {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#why_answers ul li {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 30%;
+  padding: 10%;
+}
+#why_answers img {
+  height: 6rem;
+  width: 6rem;
+  float: flex;
+  padding: 2% 2% 1 1;
+}
+
+#meet_the_team ul li {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10%
+}
+
+#meet_the_team img{
+  border-radius: 30%;
+  flex-wrap: wrap;
+}
+
+#sponsors ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#sponsors ul li {
+  padding: 2%;
+}
+
+#support {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 3% 3% 3% 3%;
+  text-align: left;
+  align-content: flex-start;
+  margin-left: 8%;
+  border-color: white;
+}
+
+
+/* using the . for the classes / why i made them plural. we REUSE classes*/
+.reasons {
+  text-align: left;
+  padding: 10%;
+}
+
+.quotes {
+  font-size: italic;
+  line-height: 200%;
+}
+
+.quotes blockquote {
+  text-align: center;
+}

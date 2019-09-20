@@ -2,17 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="normalize">
     <title>Startrly</title>
   </head>
   <body>
     <div>
 
-
-      <nav>
-        <ul>
-          <li>
-            Startrly
-          </li>
+      <nav class="navbar">
+        Startrly
+        <ul class="nav-links" style="list-style: none">
           <li>
             Try Now!
           </li>
@@ -23,33 +22,39 @@
       </nav>
 
 
-      <section>
-        <h1>Startrly</h1>
-        <sub>A catchy tagline for a great solution</sub>
-        <a href="#">Some Call to Action</a>
+      <div class="page-main">
+              <div><h1>Startrly</h1></div>
+              <div><sub>A catchy tagline for a great solution</sub></div>
+              <div class="action-button">
+              <a href="#">Some Call to Action</a></div>
+            </div>
       </section>
-
-
+     
       <section>
+        <div class="blockquote">
         <blockquote>
+          <div class="quote">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </blockquote>
-        <p>
-          Mx. Lorem
-        </p>
+          </div>
+        <div class="citation">
+          <p>
+            Mx. Lorem
+          </p>
+        </div>
+      </blockquote>
+      </div>
       </section>
-
 
       <section>
         <h2>Why?</h2>
-        <ul>
+        <ul class="why">
           <li>
             <img src="http://via.placeholder.com/100x100" />
             <strong>Comfortable</strong>
             <p>
               Et quas molestias excepturi sint occaecati cupiditate non providents, ut aut reiciendis voluptatibus maiores.
             </p>
-          </li>
+            </li>
           <li>
             <img src="http://via.placeholder.com/100x100" />
             <strong>Robust</strong>
@@ -67,20 +72,24 @@
         </ul>
       </section>
 
-
       <section>
+       <div class="blockquote">
         <blockquote>
+          <div class="quote">
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-        </blockquote>
+        </div>
+        <div class="citation">
         <p>
           Mx. Ipsum
         </p>
+        </div>
+      </div>
+    </blockquote>
       </section>
-
 
       <section>
         <h2>Meet the team</h2>
-        <ul>
+        <ul class="meet">
           <li>
             <img src="https://placebear.com/150/150" alt="profile for kari kiwi" />
             <span>Kari Kiwi</span>
@@ -108,10 +117,10 @@
           </li>
         </ul>
       </section>
-
-
+     
       <section>
         <h2>Sponsors</h2>
+        <div class="sponsors">
         <ul>
           <li>
             <img src="http://via.placeholder.com/300x100" />
@@ -129,13 +138,13 @@
             <img src="http://via.placeholder.com/220x100" />
           </li>
         </ul>
+      </div>
       </section>
-
 
       <section>
         <div>
           <h3>Support</h3>
-          <ul>
+          <ul class="footer">
             <li>
               Demo
             </li>
@@ -152,7 +161,7 @@
         </div>
         <div>
           <h3>About</h3>
-          <ul>
+          <ul class="footer">
             <li>
               Our Mission
             </li>

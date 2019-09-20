@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-rows: .1fr .3fr .1fr .1fr .1fr .2fr .1fr .1fr;
-  font-family: Helvetica
+  font-family: 'Merriweather', serif;
 }
 
 ul {
@@ -17,13 +17,13 @@ header ul {
   grid-template-columns: 3fr 1fr 1fr;
   font-weight: bold
 }
-#nav_item:first-of-type {
+.nav_item:first-of-type {
   grid-column: 1 / 2
 }
-#nav_item:nth-of-type(2) {
+.nav_item:nth-of-type(2) {
   grid-column: 2 / 3
 }
-#nav_item:nth-of-type(3) {
+.nav_item:nth-of-type(3) {
   grid-column: 3 / 4
 }
 
@@ -38,11 +38,13 @@ header ul {
 }
 #title sub {
   font-size: 1.5em;
-  display: block
+  display: block;
+  padding: 1px
 }
 #title a {
     border: grey 3px solid;
     border-radius: 10px;
+    padding: 1px;
     color: black;
     text-decoration: none;
     font-size: 1.25em;
@@ -88,16 +90,19 @@ h2 {
 }
 
 #team ul {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr
 }
-
 #team img {
   border-radius: 50%;
   border: grey 1px solid;
-  filter: grayscale(100%)
+  filter: grayscale(100%);
+  padding: .3em
 }
-
+#kiwi {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3
+}
 #sponsors {
   background-color: lightskyblue
 }
@@ -114,12 +119,10 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   background-color: seagreen
 }
-#footer h3:first-of-type {
-  grid-column: 2 / 3
+.foot h3 {
+  font-weight: bold;
+  padding-left: 40px
 }
-#footer h3:nth-of-type(2) {
-  grid-column: 3 / 4
+.foot {
+  padding: 0px 0px 0px 0px
 }
-
-
-/* use flexbox for sponsor images/logos */

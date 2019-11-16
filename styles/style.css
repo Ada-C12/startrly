@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+nav {
+  overflow: hidden;
+  background-color: lightgoldenrodyellow;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #aaf0d1
+}
+
+ul {
+  list-style-type: none
+}
+
+nav ul {
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  margin-top: 3.5em;
+  font-size: 1.4em;
+}
+
+#startrly {
+  grid-column-start: 1;
+}
+
+#try_now {
+  grid-column-start: 4;
+}
+
+#about {
+  grid-column-start: 5;
+}
+
+section h1 {
+  font-size: 4.5em;
+  margin-top: 4.4em;
+  font-family: 'Righteous', cursive;
+  animation: 5s fade-in;
+}
+
+section sub {
+  font-size: 2.4em;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: .5em;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#call:hover {
+  color: green;
+}
+
+#call {
+  border-style: solid;
+  border-color: gray;
+  border-width: .14em;
+  border-radius: 13px;
+  color: black;
+  background-color:lightgoldenrodyellow;
+  padding: .9em;
+  font-size: 2.1em;
+  text-decoration: none;
+  margin-top: 3em;
+  margin-bottom: 4.2em;
+}
+
+.quote {
+  display: grid;
+  grid-template-columns: 12% 58% 15% 15%;
+  grid-template-rows: repeat(5, 20%);
+  background-color:lightblue;
+  border-top: 1px solid black;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+}
+
+.quote blockquote::before, .quote blockquote::after {
+  content: '"';
+} 
+
+.quote blockquote {
+  font-size: 1.3em;
+  line-height: 225%;
+  margin-top: 1.6em;
+  text-align: left;
+  grid-area: 2 / 2 / 4 / 4;
+}
+
+.quote p {
+  font-size: 1.2em;
+  margin-bottom: 8.2em;
+  grid-area: 4 / 3 / 4 / 5;
+}
+
+.quote p::before {
+  content: "-- "
+}
+
+h2 {
+  margin-top: 2.5em;
+  font-size: 2em;
+  margin-bottom: 2.5em;
+}
+
+.divider {
+  border-top: 1px solid black;
+}
+
+.why {
+  display: grid;
+  justify-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 10.7em;
+}
+
+.why > li {
+  display: flex;
+}
+
+.why .image-text {
+  text-align: left;
+  padding-left: .5em;
+  padding-right: 2em;
+  height: 3em;
+  font-size: 1.2em;
+}
+
+.team {
+  display: grid;
+  justify-items: center;
+  width: 85%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 50% 50%;
+  justify-items: center;
+  margin-bottom: 7.2em;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.team > li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4em
+}
+
+.team > li > span {
+  margin-top: 1em;
+  font-size: 1.3em;
+}
+
+.team span:first-of-type {
+  font-weight: bold
+}
+
+.kari {
+  grid-area: 1 / 1 / 2 / 2
+}
+
+.dan {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.chris {
+  grid-area: 1 / 5 / 2 / 6;
+}
+
+.charles {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.dee {
+  grid-area: 2 / 4 / 3 / 5;  
+}
+
+.team .image {
+  border: 1px solid lightgoldenrodyellow;
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  border-width: 10px;
+}
+
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  height: 90%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2em;
+  margin-bottom: 4em
+}
+
+.bottom {
+  border-top: 1px solid black;
+  display: flex;
+  text-align: left
+}
+
+.bottom h3 {
+  margin-top: 2.5em;
+  padding-left: 1.4em;
+  font-size: 1.5em;
+}
+
+.bottom .menu {
+  font-size: 1.2em;
+  margin-bottom: 4em;
+  margin-right: 15em
+}
